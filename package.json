@@ -1,0 +1,28 @@
+{
+  "name": "pea-cwi-with-nodejs",
+  "version": "1.0.0",
+  "description": "CWI Report for PEA",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "SET NODE_ENV=production && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arigatopix/pea-cwi-with-nodejs.git"
+  },
+  "author": "arigato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arigatopix/pea-cwi-with-nodejs/issues"
+  },
+  "homepage": "https://github.com/arigatopix/pea-cwi-with-nodejs#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
