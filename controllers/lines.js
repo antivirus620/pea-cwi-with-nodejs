@@ -103,7 +103,7 @@ exports.getLines = asyncHandler(async (req, res, next) => {
 // @route   GET /api/v1/lines/:id
 // @access  Public
 exports.getLine = asyncHandler(async (req, res, next) => {
-  const line = await Line.findById(req.params.id);
+  const line = await Line.findById(req.params.id).populate('results');
 
   if (!line) {
     // *err ตรงนี้คือ id ถูก แต่หาไม่เจอใน database ส่วน try...catch คือ error จากระบบ
