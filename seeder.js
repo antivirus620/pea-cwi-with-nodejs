@@ -8,6 +8,7 @@ dotenv.config({ path: './config/config.env' });
 
 // Load Models
 const Line = require('./models/Line');
+const Method = require('./models/Method');
 
 // ConnectDB
 mongoose.connect(process.env.MONGO_URI, {
@@ -21,11 +22,15 @@ mongoose.connect(process.env.MONGO_URI, {
 const lines = JSON.parse(
   fs.readFileSync(`${__dirname}/_data/organizationLine.json`, 'utf-8')
 );
+const methods = JSON.parse(
+  fs.readFileSync(`${__dirname}/_data/organizationMethod.json`, 'utf-8')
+);
 
 // Import into DB
 const importData = async () => {
   try {
     await Line.create(lines);
+    await Method.create(methods);
 
     console.log('Data Imported...'.green.inverse);
     process.exit();
@@ -38,6 +43,7 @@ const importData = async () => {
 const deleteData = async () => {
   try {
     await Line.deleteMany();
+    await Method.deleteMany();
 
     console.log('Data Destroyed...'.red.inverse);
     process.exit();
