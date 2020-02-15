@@ -15,6 +15,7 @@ connectDB();
 
 // import routes files
 const lines = require('./routes/lines');
+const results = require('./routes/results');
 
 const app = express();
 
@@ -29,6 +30,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // Moute Routes
 app.use('/api/v1/lines', lines);
+app.use('/api/v1/results', results);
 
 // Moute Error Handler
 app.use(errorHandler);

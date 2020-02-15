@@ -10,6 +10,14 @@ const {
   deleteLine
 } = require('../controllers/lines');
 
+// Include other resource routers
+const resultRouter = require('./results');
+
+// Re-Route into other resource routers
+router.use('/:lineId/results', resultRouter);
+// ส่งต่อไปให้ resultRouter
+// อย่าลืมตั้งค่า mergeParams: true ที่ Router
+
 router
   .route('/')
   .get(getLines)

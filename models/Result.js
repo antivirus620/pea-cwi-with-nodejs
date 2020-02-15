@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MethodSchema = new mongoose.Schema({
+const ResultSchema = new mongoose.Schema({
   line: {
     type: mongoose.Schema.ObjectId,
     ref: 'Line',
@@ -97,4 +97,4 @@ const MethodSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('Method', MethodSchema);
+module.exports = mongoose.model('Result', ResultSchema);
