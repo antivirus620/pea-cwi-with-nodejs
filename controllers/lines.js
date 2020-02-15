@@ -79,6 +79,11 @@ exports.getLines = asyncHandler(async (req, res, next) => {
     };
   }
 
+  // populate field virtuals
+  query = query.populate({
+    path: 'results'
+  });
+
   // สั่งให้แสดงผลข้อมูล skip = skip document ตามที่บอก กับ limit = maximum document
   query = query.skip(startIndex).limit(limit);
 
@@ -151,7 +156,7 @@ exports.updateLine = asyncHandler(async (req, res, next) => {
 // @route   DELETE /api/v1/lines/:id
 // @access  Private
 exports.deleteLine = asyncHandler(async (req, res, next) => {
-  const line = await Line.findByIdAndDelete(req.params.id);
+  const line = await Line.findById(req.params.id);
 
   if (!line) {
     return next(
@@ -161,6 +166,9 @@ exports.deleteLine = asyncHandler(async (req, res, next) => {
       )
     );
   }
+
+  // ! จะ trigger delete แบบ CASCADE ทั้ง Line และ Result model
+  line.remove();
 
   res.status(200).json({ success: true, data: {} });
 });

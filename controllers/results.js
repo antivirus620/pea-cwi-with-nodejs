@@ -13,7 +13,10 @@ exports.getResults = asyncHandler(async (req, res, next) => {
   if (req.params.lineId) {
     query = Result.find({ line: req.params.lineId });
   } else {
-    query = Result.find();
+    query = Result.find().populate({
+      path: 'line',
+      select: 'tagLine lineName'
+    });
   }
 
   results = await query;
