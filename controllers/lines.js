@@ -19,7 +19,7 @@ exports.getLines = asyncHandler(async (req, res, next) => {
 
   let queryStr = JSON.stringify(reqQuery);
 
-  // ค้นหาแบบ $gt, $gte, $lt, $lte, $in
+  // ค้นหาแบบ $gt, $gte, $lt, $lte, $in ต้องแปลงค่าใส่ $ เข้าไปตามสูตรของ mongoose
   queryStr = queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g, match => `$${match}`);
 
   // * Search by Query string
