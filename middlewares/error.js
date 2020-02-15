@@ -1,4 +1,5 @@
 const ErrorResponse = require('../utils/errorResponse');
+
 const errorHandler = (err, req, res, next) => {
   // เป็น function ธรรมดาที่เอาไว้ใช้ใน middleware
   // ใช้คู่กับ function next(err) ใน controllers
@@ -6,7 +7,7 @@ const errorHandler = (err, req, res, next) => {
   let error = { ...err };
 
   // หา case Error
-  console.log(err);
+  // console.log(err);
 
   // *Setting ERROR case
   // Mongoose bad ObjectId (หาไม่เจอ หรือไม่ถูก format)
