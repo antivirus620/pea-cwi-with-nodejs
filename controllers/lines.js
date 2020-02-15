@@ -17,13 +17,40 @@ exports.getLines = asyncHandler(async (req, res, next) => {
   // Copy req.query เพื่อเอา variable ไปใช้งานง่ายๆ
   const reqQuery = { ...req.query };
 
+  // * Search by certain field
+  // Field to exclude จะไม่เอาไป query บรรทัด excute
+  // จะใช้ req.query.select หรือข้อความใดๆ ก็ตามไปใช้กับ mongoose method
+  const removeFields = ['select', 'sort'];
+
+  // Loop over array เพื่อลบ object removeFields ออกจากการ query ข้อมูล
+  // จะใช้กับ select ข้อมูลแทน
+  removeFields.forEach(param => delete reqQuery[param]);
+
   let queryStr = JSON.stringify(reqQuery);
 
-  // ค้นหาแบบ $gt, $gte, $lt, $lte, $in ต้องแปลงค่าใส่ $ เข้าไปตามสูตรของ mongoose
+  // * Create operators $gt, $gte, $lt, $lte, $in ต้องแปลงค่าใส่ $ เข้าไปตามสูตรของ mongoose
   queryStr = queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g, match => `$${match}`);
 
-  // * Search by Query string
+  // * Finding resource
   query = Line.find(JSON.parse(queryStr));
+
+  // * SELECT Fileds query
+  if (req.query.select) {
+    const fields = req.query.select.split(',').join(' ');
+    // fields จะต้องเป็น text เช่น 'tagLine nameLine peaName'
+    // เลยปรับจาก array เป็นข้อความยาวๆ join ด้วย space
+
+    query = query.select(fields);
+  }
+
+  // * SORT method
+  if (req.query.sort) {
+    const sortBy = req.query.sort.split(',').join(' ');
+    query = query.sort(sortBy);
+  } else {
+    query = query.sort('-createAt');
+    // descending ใช้ minus
+  }
 
   // * Excute query
   const lines = await query;
