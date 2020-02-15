@@ -20,7 +20,7 @@ exports.getLines = asyncHandler(async (req, res, next) => {
   // * Search by certain field
   // Field to exclude จะไม่เอาไป query บรรทัด excute
   // จะใช้ req.query.select หรือข้อความใดๆ ก็ตามไปใช้กับ mongoose method
-  const removeFields = ['select', 'sort'];
+  const removeFields = ['select', 'sort', 'page', 'limit'];
 
   // Loop over array เพื่อลบ object removeFields ออกจากการ query ข้อมูล
   // จะใช้กับ select ข้อมูลแทน
@@ -52,10 +52,46 @@ exports.getLines = asyncHandler(async (req, res, next) => {
     // descending ใช้ minus
   }
 
+  // * Limit and Pagination
+  // ! อย่าลืมตั้งค่าฐาน 10 ให้ ParseInt method
+  const page = parseInt(req.query.page, 10) || 1;
+  const limit = parseInt(req.query.limit, 10) || 100;
+  const total = await Line.countDocuments(reqQuery);
+  const startIndex = (page - 1) * limit;
+  const endIndex = page * limit;
+
+  // Init pagination
+  const pagination = {};
+
+  if (endIndex < total) {
+    // ก่อนหน้าสุดท้าย
+    pagination.next = {
+      page: page + 1,
+      limit
+    };
+  }
+
+  if (startIndex > 0) {
+    // หน้าที่สองเป็นต้นไป
+    pagination.prev = {
+      page: page - 1,
+      limit
+    };
+  }
+
+  // สั่งให้แสดงผลข้อมูล skip = skip document ตามที่บอก กับ limit = maximum document
+  query = query.skip(startIndex).limit(limit);
+
   // * Excute query
   const lines = await query;
 
-  res.status(200).json({ success: true, count: lines.length, data: lines });
+  res.status(200).json({
+    success: true,
+    count: lines.length,
+    total,
+    pagination,
+    data: lines
+  });
 });
 
 // @desc    Get single organization line
