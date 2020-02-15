@@ -13,12 +13,7 @@ exports.getLines = async (req, res, next) => {
 
     res.status(200).json({ success: true, count: lines.length, data: lines });
   } catch (err) {
-    next(
-      new ErrorResponse(
-        `Organization line not found with id ${req.params.id}`,
-        404
-      )
-    );
+    next(err);
   }
 };
 
@@ -43,15 +38,8 @@ exports.getLine = async (req, res, next) => {
     res.status(200).json({ success: true, data: line });
   } catch (err) {
     // *err ตรงนี้คือ id ที่ส่งเข้ามาไม่ถูกต้อง
-    // จะส่งให้ error handler โดยใช้ next(err) function
-
-    next(
-      new ErrorResponse(
-        `Organization line not found with id ${req.params.id}`,
-        404
-      )
-    );
-    // imprement คู่กับ errorResponse
+    // จะส่งให้ errorHandler โดยใช้ next(err) function
+    next(err);
   }
 };
 
@@ -59,9 +47,13 @@ exports.getLine = async (req, res, next) => {
 // @route   POST /api/v1/lines/
 // @access  Private
 exports.createLine = async (req, res, next) => {
-  const line = await Line.create(req.body);
+  try {
+    const line = await Line.create(req.body);
 
-  res.status(201).json({ success: true, data: line });
+    res.status(201).json({ success: true, data: line });
+  } catch (err) {
+    next(err);
+  }
 };
 
 // @desc    Update organization line
@@ -76,7 +68,12 @@ exports.updateLine = async (req, res, next) => {
     });
 
     if (!line) {
-      return res.status(400).json({ success: false });
+      return next(
+        new ErrorResponse(
+          `Organization line not found with id ${req.params.id}`,
+          404
+        )
+      );
     }
 
     res.status(200).json({
@@ -84,12 +81,7 @@ exports.updateLine = async (req, res, next) => {
       data: line
     });
   } catch (err) {
-    next(
-      new ErrorResponse(
-        `Organization line not found with id ${req.params.id}`,
-        404
-      )
-    );
+    next(err);
   }
 };
 
@@ -101,11 +93,16 @@ exports.deleteLine = async (req, res, next) => {
     const line = await Line.findByIdAndDelete(req.params.id);
 
     if (!line) {
-      res.status(400).json({ success: false });
+      return next(
+        new ErrorResponse(
+          `Organization line not found with id ${req.params.id}`,
+          404
+        )
+      );
     }
 
     res.status(200).json({ success: true, data: {} });
   } catch (err) {
-    res.status(400).json({ success: false });
+    next(err);
   }
 };
