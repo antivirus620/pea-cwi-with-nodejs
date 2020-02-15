@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const slugify = require('slugify');
 
 const LineSchema = new mongoose.Schema({
   peaName: {
@@ -12,7 +13,7 @@ const LineSchema = new mongoose.Schema({
     maxlength: [14, 'Tag can not me more than 14 characters'],
     unique: true
   },
-  slug: String,
+  lineCode: String,
   lineName: {
     type: String,
     required: [true, 'Please add a organization line name'],
@@ -46,6 +47,17 @@ const LineSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   }
+});
+
+// Create lineCode slug from lineName
+LineSchema.pre('save', function(next) {
+  // ใช้ function ปกติเพราะจะ refer this ใน document ปัจจุบัน ถ้าใช้ arrow function this คือ global scope
+
+  const lineName = this.lineName.split(' ');
+  this.lineCode = slugify(lineName[0], {
+    lower: true
+  });
+  next();
 });
 
 module.exports = mongoose.model('Line', LineSchema);
