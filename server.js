@@ -4,6 +4,9 @@ const morgan = require('morgan'); // logger console
 const colors = require('colors');
 const connectDB = require('./config/db');
 
+// Load Middleware
+const errorHandler = require('./middlewares/error');
+
 // Load ENV
 dotenv.config({ path: './config/config.env' });
 
@@ -24,8 +27,11 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
-// Routes
+// Moute Routes
 app.use('/api/v1/lines', lines);
+
+// Moute Error Handler
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 

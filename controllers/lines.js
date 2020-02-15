@@ -1,5 +1,7 @@
 // import models
 const Line = require('../models/Line');
+// imprement ErrorHandler and ErrorResponse class
+const ErrorResponse = require('../utils/errorResponse');
 
 // @desc    Get all organization line
 // @route   GET /api/v1/lines
@@ -11,7 +13,12 @@ exports.getLines = async (req, res, next) => {
 
     res.status(200).json({ success: true, count: lines.length, data: lines });
   } catch (err) {
-    res.status(400).json({ success: false });
+    next(
+      new ErrorResponse(
+        `Organization line not found with id ${req.params.id}`,
+        404
+      )
+    );
   }
 };
 
@@ -24,13 +31,27 @@ exports.getLine = async (req, res, next) => {
     const line = await Line.findById(req.params.id);
 
     if (!line) {
-      // คือหาไม่เจอใน database ส่วน try...catch คือ error จากระบบ
-      return res.status(400).json({ success: false });
+      // *err ตรงนี้คือ id ถูก แต่หาไม่เจอใน database ส่วน try...catch คือ error จากระบบ
+      return next(
+        new ErrorResponse(
+          `Organization line not found with id ${req.params.id}`,
+          404
+        )
+      );
     }
 
     res.status(200).json({ success: true, data: line });
   } catch (err) {
-    res.status(400).json({ success: false });
+    // *err ตรงนี้คือ id ที่ส่งเข้ามาไม่ถูกต้อง
+    // จะส่งให้ error handler โดยใช้ next(err) function
+
+    next(
+      new ErrorResponse(
+        `Organization line not found with id ${req.params.id}`,
+        404
+      )
+    );
+    // imprement คู่กับ errorResponse
   }
 };
 
@@ -63,7 +84,12 @@ exports.updateLine = async (req, res, next) => {
       data: line
     });
   } catch (err) {
-    res.status(400).json({ success: false });
+    next(
+      new ErrorResponse(
+        `Organization line not found with id ${req.params.id}`,
+        404
+      )
+    );
   }
 };
 
