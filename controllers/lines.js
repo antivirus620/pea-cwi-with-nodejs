@@ -8,7 +8,26 @@ const asyncHandler = require('../middlewares/async');
 // @access  Public
 // * export function
 exports.getLines = asyncHandler(async (req, res, next) => {
-  const lines = await Line.find();
+  // query parameter
+  console.log(req.query);
+
+  // มีไว้เพื่อเก็บค่า query แต่ละบรรทัดไปใช้ fecth ข้อมูลจาก DB
+  let query;
+
+  // Copy req.query เพื่อเอา variable ไปใช้งานง่ายๆ
+  const reqQuery = { ...req.query };
+
+  let queryStr = JSON.stringify(reqQuery);
+
+  // ค้นหาแบบ $gt, $gte, $lt, $lte, $in
+  queryStr = queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g, match => `$${match}`);
+
+  // * Search by Query string
+  query = Line.find(JSON.parse(queryStr));
+
+  // * Excute query
+  const lines = await query;
+
   res.status(200).json({ success: true, count: lines.length, data: lines });
 });
 
