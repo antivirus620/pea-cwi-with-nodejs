@@ -15,6 +15,9 @@ const lines = require('./routes/lines');
 
 const app = express();
 
+// Body Parser สำหรับรับข้อมูลจาก client ที่เป็นก้อน รวมเป็นก้อนเดียว
+app.use(express.json());
+
 // Middlware
 if (process.env.NODE_ENV === 'development') {
   // logger to console
@@ -36,7 +39,7 @@ const server = app.listen(
 // Global Handler unhandled promises rejections กรณี DB crash
 process.on('unhandledRejection', (err, promise) => {
   // แสดงผลใน console กรณี error
-  console.log(`Error: ${err.message}`);
+  console.log(`Error: ${err.message}`.red);
 
   // Close server & exit process
   server.close(() => process.exit(1));

@@ -1,3 +1,6 @@
+// import models
+const Line = require('../models/Line');
+
 // @desc    Get all organization line
 // @route   GET /api/v1/lines
 // @access  Public
@@ -18,8 +21,11 @@ exports.getLine = (req, res, next) => {
 // @desc    Create organization line
 // @route   POST /api/v1/lines/
 // @access  Private
-exports.createLine = (req, res, next) => {
-  res.status(201).json({ success: true, msg: 'Create organization line' });
+exports.createLine = async (req, res, next) => {
+  console.log(req.body);
+  const line = await Line.create(req.body);
+
+  res.status(201).json({ success: true, data: line });
 };
 
 // @desc    Update organization line

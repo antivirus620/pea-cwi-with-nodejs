@@ -6,7 +6,8 @@
     "totalPole": 140,
     "distance": 3.144,
     "overallPoint": 0.25,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.พิษณุโลก",
@@ -15,7 +16,8 @@
     "totalPole": 63,
     "distance": 2.102,
     "overallPoint": 1,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.พิษณุโลก",
@@ -24,7 +26,8 @@
     "totalPole": 72,
     "distance": 2.001,
     "overallPoint": 1,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.พิษณุโลก",
@@ -33,7 +36,8 @@
     "totalPole": 99,
     "distance": 3.045,
     "overallPoint": 1,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.พิษณุโลก",
@@ -42,7 +46,8 @@
     "totalPole": 146,
     "distance": 2.956,
     "overallPoint": 1,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.พิษณุโลก",
@@ -51,7 +56,8 @@
     "totalPole": 202,
     "distance": 4.552,
     "overallPoint": 1,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.แพร่",
@@ -60,7 +66,8 @@
     "totalPole": 29,
     "distance": 0.596,
     "overallPoint": 1,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.แพร่",
@@ -69,7 +76,8 @@
     "totalPole": 32,
     "distance": 0.794,
     "overallPoint": 0.25,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.แพร่",
@@ -78,7 +86,8 @@
     "totalPole": 80,
     "distance": 1.551,
     "overallPoint": 0.25,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.แพร่",
@@ -87,7 +96,8 @@
     "totalPole": 82,
     "distance": 1.73,
     "overallPoint": 0.25,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.แพร่",
@@ -96,7 +106,8 @@
     "totalPole": 33,
     "distance": 0.592,
     "overallPoint": 0.25,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.แพร่",
@@ -105,7 +116,8 @@
     "totalPole": 78,
     "distance": 1.512,
     "overallPoint": 0.25,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.แพร่",
@@ -114,7 +126,8 @@
     "totalPole": 111,
     "distance": 2.244,
     "overallPoint": 0.25,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.อุตรดิตถ์",
@@ -123,7 +136,8 @@
     "totalPole": 85,
     "distance": 2.149,
     "overallPoint": 1,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.อุตรดิตถ์",
@@ -132,7 +146,8 @@
     "totalPole": 106,
     "distance": 2.526,
     "overallPoint": 0.35,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.อุตรดิตถ์",
@@ -141,7 +156,8 @@
     "totalPole": 100,
     "distance": 2.665,
     "overallPoint": 0.35,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟจ.อุตรดิตถ์",
@@ -150,7 +166,8 @@
     "totalPole": 34,
     "distance": 0.865,
     "overallPoint": 1,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟย.ลับแล",
@@ -159,7 +176,8 @@
     "totalPole": 48,
     "distance": 1.181,
     "overallPoint": 1,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟย.ลับแล",
@@ -168,7 +186,8 @@
     "totalPole": 30,
     "distance": 0.854,
     "overallPoint": 0.35,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   },
   {
     "peaName": "กฟย.ลับแล",
@@ -177,6 +196,7 @@
     "totalPole": 34,
     "distance": 0.922,
     "overallPoint": 1,
-    "year": 2019
+    "year": 2019,
+    "peaCrossarm": true
   }
 ]
