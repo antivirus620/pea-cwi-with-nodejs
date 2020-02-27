@@ -3,7 +3,7 @@ const slugify = require('slugify');
 
 const LineSchema = new mongoose.Schema(
   {
-    peaName: {
+    peaCode: {
       type: String,
       required: [true, 'Please add a PEA Name']
     },
@@ -32,10 +32,6 @@ const LineSchema = new mongoose.Schema(
     },
     overallPoint: Number,
     year: String,
-    peaCrossarm: {
-      type: Boolean,
-      default: false
-    },
     photoBefore: {
       type: String,
       default: 'no-photo.jpg'

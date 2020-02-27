@@ -1,7 +1,7 @@
 // import models
-const Line = require('../models/Line');
-const ErrorResponse = require('../utils/errorResponse');
-const asyncHandler = require('../middlewares/async');
+const Line = require('../../models/organizationLine/Line');
+const ErrorResponse = require('../../utils/errorResponse');
+const asyncHandler = require('../../middlewares/async');
 
 // @desc    Get all organization line
 // @route   GET /api/v1/lines

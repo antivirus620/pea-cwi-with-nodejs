@@ -7,8 +7,8 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './config/config.env' });
 
 // Load Models
-const Line = require('./models/Line');
-const Result = require('./models/Result');
+const Line = require('./models/organizationLine/Line');
+const Result = require('./models/organizationLine/Result');
 
 // ConnectDB
 mongoose.connect(process.env.MONGO_URI, {

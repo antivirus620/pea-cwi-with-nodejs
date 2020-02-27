@@ -14,8 +14,8 @@ dotenv.config({ path: './config/config.env' });
 connectDB();
 
 // import routes files
-const lines = require('./routes/lines');
-const results = require('./routes/results');
+const lines = require('./routes/organizationLine/lines');
+const results = require('./routes/organizationLine/results');
 
 const app = express();
 

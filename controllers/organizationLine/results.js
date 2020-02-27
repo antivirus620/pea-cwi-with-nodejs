@@ -1,8 +1,8 @@
 // import models
-const Result = require('../models/Result');
-const Line = require('../models/Line');
-const ErrorResponse = require('../utils/errorResponse');
-const asyncHandler = require('../middlewares/async');
+const Result = require('../../models/organizationLine/Result');
+const Line = require('../../models/organizationLine/Line');
+const ErrorResponse = require('../../utils/errorResponse');
+const asyncHandler = require('../../middlewares/async');
 
 // @desc    Get all result
 // @route   GET /api/v1/results

@@ -6,7 +6,7 @@ const {
   addResult,
   updateResult,
   deleteResult
-} = require('../controllers/results');
+} = require('../../controllers/organizationLine/results');
 
 router
   .route('/')

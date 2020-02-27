@@ -8,7 +8,7 @@ const {
   createLine,
   updateLine,
   deleteLine
-} = require('../controllers/lines');
+} = require('../../controllers/organizationLine/lines');
 
 // Include other resource routers
 const resultRouter = require('./results');

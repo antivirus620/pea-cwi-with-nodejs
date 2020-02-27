@@ -1,222 +1,1955 @@
 [
   {
-    "_id": "5e47a45cf6a5fc069cffdf78",
-    "peaName": "กฟจ.พิษณุโลก",
+    "peaCode": "B01101",
     "tagLine": "TCF0016138821",
     "lineName": "AP62120001 สะพานนเรศวร-เซ็นทรัล",
     "totalPole": 140,
     "distance": 3.144,
     "overallPoint": 0.25,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf79",
-    "peaName": "กฟจ.พิษณุโลก",
+    "peaCode": "B01101",
     "tagLine": "TCF0016139376",
     "lineName": "AP62120002 หน้าสำนักงานการไฟฟ้าเขต 2 ภาคเหนือ พิษณุโลก - โลตัสพิษณุโลก",
     "totalPole": 63,
     "distance": 2.102,
     "overallPoint": 1,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf7a",
-    "peaName": "กฟจ.พิษณุโลก",
+    "peaCode": "B01101",
     "tagLine": "TCF0016140553",
     "lineName": "AP62120003 แยกท็อปแลนด์ - อนุบาลพิษณุโลก",
     "totalPole": 72,
     "distance": 2.001,
     "overallPoint": 1,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf7b",
-    "peaName": "กฟจ.พิษณุโลก",
+    "peaCode": "B01101",
     "tagLine": "TCF0016140671",
     "lineName": "AP62120004 หน้าสำนักงานเขต น.2 - โรงแรมรัตนาวิว",
     "totalPole": 99,
     "distance": 3.045,
     "overallPoint": 1,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf7c",
-    "peaName": "กฟจ.พิษณุโลก",
+    "peaCode": "B01101",
     "tagLine": "TCF0016142418",
     "lineName": "AP62120005 หลัง มหาวิทยาลัยนเรศวร - ริมคลองชล",
     "totalPole": 146,
     "distance": 2.956,
     "overallPoint": 1,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf7d",
-    "peaName": "กฟจ.พิษณุโลก",
+    "peaCode": "B01101",
     "tagLine": "TCF0016139048",
     "lineName": "AP62120006 หอนาฬิกา-สามแยกแม็คโคร",
     "totalPole": 202,
     "distance": 4.552,
     "overallPoint": 1,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf7e",
-    "peaName": "กฟจ.แพร่",
+    "peaCode": "B07101",
     "tagLine": "TCF0016145280",
     "lineName": "AP62120007 สี่แยกทุ่งต้อม-สี่แยกเจริญราษฏร์",
     "totalPole": 29,
     "distance": 0.596,
     "overallPoint": 1,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf7f",
-    "peaName": "กฟจ.แพร่",
+    "peaCode": "B07101",
     "tagLine": "TCF0016145683",
     "lineName": "AP62120008 สี่แยกบ้านทุ่ง-แยกโรงพยาบาลแพร่",
     "totalPole": 32,
     "distance": 0.794,
     "overallPoint": 0.25,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf80",
-    "peaName": "กฟจ.แพร่",
+    "peaCode": "B07101",
     "tagLine": "TCF0016145698",
     "lineName": "AP62120009 แยกสนามบิน-แยกนาจักร",
     "totalPole": 80,
     "distance": 1.551,
     "overallPoint": 0.25,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf81",
-    "peaName": "กฟจ.แพร่",
+    "peaCode": "B07101",
     "tagLine": "TCF0016145702",
     "lineName": "AP62120010 แยกนาจักร-บ้านแต",
     "totalPole": 82,
     "distance": 1.73,
     "overallPoint": 0.25,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf82",
-    "peaName": "กฟจ.แพร่",
+    "peaCode": "B07101",
     "tagLine": "TCF0016145983",
     "lineName": "AP62120011 ข้างสถานีตำรวจ-สามแยกเหมืองหิต",
     "totalPole": 33,
     "distance": 0.592,
     "overallPoint": 0.25,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf83",
-    "peaName": "กฟจ.แพร่",
+    "peaCode": "B07101",
     "tagLine": "TCF0016145986",
     "lineName": "AP62120012 แยกโรงพยาบาลแพร่-แยกสนามบิน",
     "totalPole": 78,
     "distance": 1.512,
     "overallPoint": 0.25,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf84",
-    "peaName": "กฟจ.แพร่",
+    "peaCode": "B07101",
     "tagLine": "TCF0016145989",
     "lineName": "AP62120013 แยกโรงพยาบาลแพร่-วิทยาลัยเทคนิคแพร่",
     "totalPole": 111,
     "distance": 2.244,
     "overallPoint": 0.25,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf85",
-    "peaName": "กฟจ.อุตรดิตถ์",
+    "peaCode": "B06101",
     "tagLine": "TCF0016139084",
     "lineName": "AP62120014 แยกศูนย์จราจร - สี่แยกพิทธณา",
     "totalPole": 85,
     "distance": 2.149,
     "overallPoint": 1,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf86",
-    "peaName": "กฟจ.อุตรดิตถ์",
+    "peaCode": "B06101",
     "tagLine": "TCF0016139097",
     "lineName": "AP62120015 วงเวียนสาธารณสุข ถึง แยกโรงเรียนอุตรดิตถ์",
     "totalPole": 106,
     "distance": 2.526,
     "overallPoint": 0.35,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf87",
-    "peaName": "กฟจ.อุตรดิตถ์",
+    "peaCode": "B06101",
     "tagLine": "TCF0016139095",
     "lineName": "AP62120016 แยกบ้านเกาะ ถึง วัดธรรมธิปไตย",
     "totalPole": 100,
     "distance": 2.665,
     "overallPoint": 0.35,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf88",
-    "peaName": "กฟจ.อุตรดิตถ์",
+    "peaCode": "B06101",
     "tagLine": "TCF0016139096",
     "lineName": "AP62120017 วัดธรรมธิปไตย ถึง โรงเรียนอุตรดิตถ์",
     "totalPole": 34,
     "distance": 0.865,
     "overallPoint": 1,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf89",
-    "peaName": "กฟย.ลับแล",
+    "peaCode": "B06105",
     "tagLine": "TCF0016139090",
     "lineName": "AP62120018 ถนนเขาน้ำตก ถึง แยกต้นม่วง",
     "totalPole": 48,
     "distance": 1.181,
     "overallPoint": 1,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf8a",
-    "peaName": "กฟย.ลับแล",
+    "peaCode": "B06105",
     "tagLine": "TCF0016139099",
     "lineName": "AP62120019 ถนนราษฎร์บำรุง (ยางกะไดใต้) ถึง สะพานมะขามใหญ่",
     "totalPole": 30,
     "distance": 0.854,
     "overallPoint": 0.35,
-    "peaCrossarm": true,
     "year": 2019
   },
   {
-    "_id": "5e47a45cf6a5fc069cffdf8b",
-    "peaName": "กฟย.ลับแล",
+    "peaCode": "B06105",
     "tagLine": "TCF0016139100",
     "lineName": "AP62120020 ถนนราษฎร์อุทิศ (ยางกะไดเหนือ) ถึง ประตูวัดป่ายาง",
     "totalPole": 34,
     "distance": 0.922,
     "overallPoint": 1,
-    "peaCrossarm": true,
     "year": 2019
+  },
+  {
+    "peaCode": "B04101",
+    "tagLine": "TCC0015962429",
+    "lineName": "AP62120021 เจริญสุขฝั่งซ้าย-ทางเข้าหมู่บ้านศรีเจริญวิล่า",
+    "totalPole": 99,
+    "distance": 3.638,
+    "overallPoint": 1,
+    "year": 2019
+  },
+  {
+    "peaCode": "B04101",
+    "tagLine": "TCF0016137974",
+    "lineName": "AP62120022 ถ.เจริญสุขฝั่งขวา (สามแยกข้าง รร.ชากังราว)-ถ.เจริญสุขฝั่งขวา(สี่แยกพิจิตรฝั่งขวา)",
+    "totalPole": 80,
+    "distance": 2.349,
+    "overallPoint": 0.35,
+    "year": 2019
+  },
+  {
+    "peaCode": "B04101",
+    "tagLine": "TCF0016137983",
+    "lineName": "AP62120023 ถ.เทศบาล (สามแยกข้างปั๊มเส้นพิจิตร)-ถ.เทศบาล 1 (สี่แยกไฟแดงข้าง รพ.กพ.)",
+    "totalPole": 95,
+    "distance": 2.226,
+    "overallPoint": 0.25,
+    "year": 2019
+  },
+  {
+    "peaCode": "B04101",
+    "tagLine": "TCF0016138010",
+    "lineName": "AP62120024 ถ.ราชดำเนิน 1(สี่แยกวัดบาง) -ถ.ราชดำเนิน 1 (สี่แยกท่ามะเขือ)",
+    "totalPole": 82,
+    "distance": 1.849,
+    "overallPoint": 0.25,
+    "year": 2019
+  },
+  {
+    "peaCode": "B04101",
+    "tagLine": "TCF0016065147",
+    "lineName": "AP62120025 ถ.เทศา 2(วงเวียนต้นโพธ์) -ซีนิคริเวอร์ไซท์รีสอร์ท",
+    "totalPole": 117,
+    "distance": 3.198,
+    "overallPoint": 0.25,
+    "year": 2019
+  },
+  {
+    "peaCode": "B04101",
+    "tagLine": "TCF0016138094",
+    "lineName": "AP62120026 สี่แยกนครชุม-ใต้สะพานข้ามแม่น้ำปิงฝั่ง บขส.",
+    "totalPole": 62,
+    "distance": 2.307,
+    "overallPoint": 0.25,
+    "year": 2019
+  },
+  {
+    "peaCode": "B05101",
+    "tagLine": "TCF0016137985",
+    "lineName": "AP62120027 แยกนิสสัน ถ.สระหลวง ฝั่งซ้าย - แยกช่อมะรุม ถ.สระหลวง ฝั่งซ้าย",
+    "totalPole": 195,
+    "distance": 4.64,
+    "overallPoint": 1,
+    "year": 2019
+  },
+  {
+    "peaCode": "B05201",
+    "tagLine": "TCF0016138909",
+    "lineName": "AP62120028 เส้นทาง หน้า กฟส.วชิรบารมี - แยกปลวกสูง",
+    "totalPole": 65,
+    "distance": 2.216,
+    "overallPoint": 0.25,
+    "year": 2019
+  },
+  {
+    "peaCode": "B02101",
+    "tagLine": "TCF0016139046",
+    "lineName": "AP62120029 (หน้าอำเภอเมืองสุโขทัย-สี่เเยกคลองโพธิ์ ฝั่งซ้าย)",
+    "totalPole": 99,
+    "distance": 2.14,
+    "overallPoint": 1,
+    "year": 2019
+  },
+  {
+    "peaCode": "B02201",
+    "tagLine": "TCF0016139101",
+    "lineName": "AP62120030 (แยกประปาศรีสำโรง ถึง ปากทางสุโขทัยรีสอร์ท)",
+    "totalPole": 68,
+    "distance": 2.4,
+    "overallPoint": 0.35,
+    "year": 2019
+  },
+  {
+    "peaCode": "B11201",
+    "tagLine": "TCF0016137810",
+    "lineName": "AP62120031 หน้าการประปา-สามแยกไชยอุดม",
+    "totalPole": 62,
+    "distance": 1.407,
+    "overallPoint": 1,
+    "year": 2019
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016137869",
+    "lineName": "AP62120032 หมู่บ้านสหกรณ์ - สี่แยกกรุงไทย",
+    "totalPole": 169,
+    "distance": 4.108,
+    "overallPoint": 1,
+    "year": 2019
+  },
+  {
+    "peaCode": "B12101",
+    "tagLine": "TCF0016139044",
+    "lineName": "AP62120033 ร้านทองนาทีทอง 2 สี่แยกสลกบาตร - สบกบาตรรีสอร์ท",
+    "totalPole": 46,
+    "distance": 1.488,
+    "overallPoint": 1,
+    "year": 2019
+  },
+  {
+    "peaCode": "B12101",
+    "tagLine": "TCF0016139049",
+    "lineName": "AP62120034 ร้านทองนาทีทอง 2 สี่แยกสลกบาตร - ปั๊มธนูบริการ",
+    "totalPole": 46,
+    "distance": 1.469,
+    "overallPoint": 1,
+    "year": 2019
+  },
+  {
+    "peaCode": "B12101",
+    "tagLine": "TCF0016139053",
+    "lineName": "AP62120035 ร้านสหสินธุรกิจสี่แยกสลกบาตร - สลกบาตรนำโชค",
+    "totalPole": 45,
+    "distance": 0.974,
+    "overallPoint": 0.25,
+    "year": 2019
+  },
+  {
+    "peaCode": "B12101",
+    "tagLine": "TCF0016139058",
+    "lineName": "AP62120036 สหสินธุรกิจสลกบาตร - ไพศาลการยางสลกบาตร",
+    "totalPole": 46,
+    "distance": 1.276,
+    "overallPoint": 0.25,
+    "year": 2019
+  },
+  {
+    "peaCode": "B12102",
+    "tagLine": "TCF0016139065",
+    "lineName": "AP62120037 หน้า กฟย.บึงสามัคคี - สามแยกทุ่งสนุน",
+    "totalPole": 62,
+    "distance": 2.766,
+    "overallPoint": 0.25,
+    "year": 2019
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016146518",
+    "lineName": "AP62120038 แยกลอมเก้ากว๋าว - หน้าวัดปากค่า",
+    "totalPole": 85,
+    "distance": 2.144,
+    "overallPoint": 1,
+    "year": 2019
+  },
+  {
+    "peaCode": "B01101",
+    "tagLine": "TCF0016235167",
+    "lineName": "AP62120039 สะพานข้ามทางรถไฟฝั่งซ้ายและขวา - ก่อนถึงแยกขนส่งเก่าฝั่งซ้ายและขวา",
+    "totalPole": 103,
+    "distance": 2.624,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01101",
+    "tagLine": "TCF0016140787",
+    "lineName": "AP62120040 ตรงข้ามหน้าห้างเซ็ลทรัล - สะพานนเรศวร",
+    "totalPole": 167,
+    "distance": 4.117,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01405",
+    "tagLine": "TCF0016146137",
+    "lineName": "AP62120041 ตรงข้ามสำนักกฟย.พทว.-ตลาดสด",
+    "totalPole": 39,
+    "distance": 1.102,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01401",
+    "tagLine": "TCF0016144911",
+    "lineName": "AP62120042 หน้าสถานีจ่ายไฟวังทอง - โรงพยาบาลวังทอง",
+    "totalPole": 135,
+    "distance": 3.818,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01401",
+    "tagLine": "TCF0016144839",
+    "lineName": "AP62120043 หน้าสถานีจ่ายไฟวังทอง - สะพานข้ามแม่น้ำวังทอง",
+    "totalPole": 106,
+    "distance": 2.834,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01407",
+    "tagLine": "TCF0016146159",
+    "lineName": "AP62120044 ตรงข้ามโรงพยาบาลนมป.-ตลาดสด",
+    "totalPole": 103,
+    "distance": 3.262,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01201",
+    "tagLine": "TCF0016138820",
+    "lineName": "AP62120045 โค้งร้านอาหาร-ทางเข้าเขื่อน",
+    "totalPole": 106,
+    "distance": 2.408,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01202",
+    "tagLine": "TCF0016138873",
+    "lineName": "AP62120046 โรงเรียนป่าสักถึงตลาดสด",
+    "totalPole": 63,
+    "distance": 1.525,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01602",
+    "tagLine": "TCF0016146131",
+    "lineName": "AP62120047 ตลาดสดบ้านใหม่-วัดบ้านใหม่",
+    "totalPole": 47,
+    "distance": 1.443,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01601",
+    "tagLine": "TCF0016144743",
+    "lineName": "AP62120048 สะพานข้ามคลอง-หน้าสำนักงานไฟฟ้าบางกระทุ่ม",
+    "totalPole": 56,
+    "distance": 1.87,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01301",
+    "tagLine": "TCF0016137946",
+    "lineName": "AP62120049 สามแยกนครไทย - อนุสาวรีย์พ่อขุนศรีอินทราทิตย์ ฝั่งซ้าย",
+    "totalPole": 63,
+    "distance": 1.912,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01303",
+    "tagLine": "TCF0016137962",
+    "lineName": "AP62120050 สามแยกบ้านแยง - สภ.บ้านแยง ฝั่งซ้าย",
+    "totalPole": 21,
+    "distance": 0.563,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01303",
+    "tagLine": "TCF0016137967",
+    "lineName": "AP62120051 สามแยกบ้านแยง - สภ.บ้านแยง ฝั่งขวา",
+    "totalPole": 18,
+    "distance": 0.541,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01302",
+    "tagLine": "TCF0016137971",
+    "lineName": "AP62120052 สามแยกป่าแดง - โรงเรียนป่าแดง ฝั่งซ้าย",
+    "totalPole": 59,
+    "distance": 1.614,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01503",
+    "tagLine": "TCF0016167924",
+    "lineName": "AP62120053 สามแยกบ้านคุยมะตูม - สามแยกบ้านเกาะจันทร์",
+    "totalPole": 68,
+    "distance": 3.102,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01501",
+    "tagLine": "TCF0016167500",
+    "lineName": "AP62120054 ไฟแดงวัดแจ่ม - สะพานข้ามแม่น้ำยม",
+    "totalPole": 163,
+    "distance": 6.196,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01501",
+    "tagLine": "TCF0016167535",
+    "lineName": "AP62120055 ตั้งแต่สะพานข้าแม่น้ำยม - sf6 หน้าสนง.การไฟฟ้า",
+    "totalPole": 126,
+    "distance": 2.996,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01402",
+    "tagLine": "TCF0016146177",
+    "lineName": "AP62120056 แยกท่าหมื่นราม-ศูนย์สร้างและบรูณะสะพาน",
+    "totalPole": 58,
+    "distance": 2.171,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01701",
+    "tagLine": "TCF0016139091",
+    "lineName": "AP62120057 วงเวียน-ตลาดวัดโบสถ์",
+    "totalPole": 53,
+    "distance": 1.377,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07101",
+    "tagLine": "TCF0016145996",
+    "lineName": "AP62120058 บ้านเหมืองหม้อ-บ้านถิ่น",
+    "totalPole": 83,
+    "distance": 2.477,
+    "overallPoint": 0.3,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07101",
+    "tagLine": "TCF0016145998",
+    "lineName": "AP62120059 สี่แยกเหมืองหิต - แยกสวรรค์นิเวศ",
+    "totalPole": 67,
+    "distance": 1.548,
+    "overallPoint": 1,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07101",
+    "tagLine": "TCF0016146000",
+    "lineName": "AP62120060 ศาลากลาง-แยกสวรรค์นิเวศ",
+    "totalPole": 42,
+    "distance": 1.068,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07101",
+    "tagLine": "TCF0016146004",
+    "lineName": "AP62120061 แยกสวรรค์นิเวศ-ศูนย์รถยนต์ฮอนด้าทุ่งโฮ้ง",
+    "totalPole": 121,
+    "distance": 2.332,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07501",
+    "tagLine": "TCF0016138779",
+    "lineName": "AP62120062 สี่แยกร้องเข็มฝั่งซ้าย - ปั๊มPT ทุ่งศรี",
+    "totalPole": 100,
+    "distance": 3.038,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07501",
+    "tagLine": "TCF0016139047",
+    "lineName": "AP62120063 หจก.แพร่รัตนไชย - สี่แยกร้องเข็ม (ฝั่งขวา )",
+    "totalPole": 80,
+    "distance": 2.679,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07501",
+    "tagLine": "TCF0016139055",
+    "lineName": "AP62120064 ร้านดอนมูลอิฐบล็อก- สี่แยกร้องเข็ม (ฝั่งซ้าย)",
+    "totalPole": 100,
+    "distance": 2.455,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07501",
+    "tagLine": "TCF0016138905",
+    "lineName": "AP62120065 สี่แยกร้องเข็มฝั่งขวา - สถานีใบยาร้องกวาง",
+    "totalPole": 99,
+    "distance": 1.729,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07801",
+    "tagLine": "TCF0016139105",
+    "lineName": "AP62120066 สี่แยกนาเวียง ถึง หน้าโรงพยาบาลวังชิ้น",
+    "totalPole": 78,
+    "distance": 2.082,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07801",
+    "tagLine": "TCF0016139107",
+    "lineName": "AP62120067 แยกร้านวังชิ้นการพิมพ์ ถึง หน้า กฟส.วังชิ้น",
+    "totalPole": 26,
+    "distance": 0.548,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07801",
+    "tagLine": "TCF0016139104",
+    "lineName": "AP62120068 ข้าง สภ.วังชิ้น ถึง หน้าไปร์ษณีย์อำเภอวังชิ้น",
+    "totalPole": 8,
+    "distance": 0.187,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07601",
+    "tagLine": "TCF0016138869",
+    "lineName": "AP62120069 ปากทางหมู่บ้านเสรีเมืองทอง ถึง 8 แยกไฟแดงบ้านแม่คำมีท่าล้อ",
+    "totalPole": 127,
+    "distance": 3.579,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B07601",
+    "tagLine": "TCF0016138892",
+    "lineName": "AP62120070 แยกไฟแดงบ้านแม่คำมีท่าล้อ ถึง 3 แยกหน้าวัดบ้านน้ำรัด",
+    "totalPole": 155,
+    "distance": 3.409,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06101",
+    "tagLine": "TCF0016139299",
+    "lineName": "AP62120071 วัดหมอนไม้ ถึง มูลนิธิอุตรดิตถ์แยกช้างม้าวัวควาย",
+    "totalPole": 85,
+    "distance": 2.333,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06101",
+    "tagLine": "TCF0016139260",
+    "lineName": "AP62120072 แยกบ้านเกาะ ถึง แยกช้างม้าวัวควาย",
+    "totalPole": 103,
+    "distance": 2.334,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06105",
+    "tagLine": "TCF0016138316",
+    "lineName": "AP62120073 หน้าป้อมตำรวจ สภอ.ลับแล ถึง หน้าวัดดอนไชย",
+    "totalPole": 31,
+    "distance": 0.743,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06104",
+    "tagLine": "TCF0016138319",
+    "lineName": "AP62120074 หน้าสนง.ท่าปลา ถึง อนามัยร่วมจิต",
+    "totalPole": 50,
+    "distance": 1.919,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06108",
+    "tagLine": "TCF0016138320",
+    "lineName": "AP62120075 โรงเรียนชุมชนบ้านแก่ง ถึง วัดบ้านแก่งใต้",
+    "totalPole": 31,
+    "distance": 0.872,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06102",
+    "tagLine": "TCF0016138321",
+    "lineName": "AP62120076 หน้า กฟภ.ทองแสนขัน ถึง สะพานข้ามคลองตรอน (ทองแสนขัน)",
+    "totalPole": 40,
+    "distance": 1.025,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06301",
+    "tagLine": "TCF0016138323",
+    "lineName": "AP62120077 รีสอร์ต วิวัฒน์ ถึง สามแยกชูโชคชัย",
+    "totalPole": 50,
+    "distance": 1.231,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06303",
+    "tagLine": "TCF0016138324",
+    "lineName": "AP62120078 โรงเรียนวัดโพธิ์ชัย ถึง วัดโพธิ์เตี้ย (สองคอน)",
+    "totalPole": 34,
+    "distance": 1.205,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06303",
+    "tagLine": "TCF0016138326",
+    "lineName": "AP62120079 ธกส.ฟากท่า ถึง ศาลปู่ตาพญาปาด",
+    "totalPole": 36,
+    "distance": 0.914,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06302",
+    "tagLine": "TCF0016138330",
+    "lineName": "AP62120080 สามแยก รพ. บ้านโคก ถึง วัดฟากน่า",
+    "totalPole": 95,
+    "distance": 2.56,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B06201",
+    "tagLine": "TCF0016137844",
+    "lineName": "AP62120081 โรงเรียนบ้านในเมือง ถึง ป้อมตำรวจวัดมหาธาตุ",
+    "totalPole": 46,
+    "distance": 1.112,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04114",
+    "tagLine": "TCF0016141814",
+    "lineName": "AP62120084 ตรงข้ามหมวดการทางโกสัมพีนคร-รพ.สต.เกาะรากเสียด",
+    "totalPole": 39,
+    "distance": 1.407,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04101",
+    "tagLine": "TCC0015748773",
+    "lineName": "AP62120083 ทางเข้าสวนสิริจิตร-วงเวียนต้นโพธิ์",
+    "totalPole": 58,
+    "distance": 1.333,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04101",
+    "tagLine": "TCF0016065339",
+    "lineName": "AP62120082 เส้นทางเฉลิมพระเกียรติสะพานข้ามแม่น้ำปิง-สี่แยกนครชุม ฝั่งบริษัท กสท.",
+    "totalPole": 80,
+    "distance": 2.387,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04501",
+    "tagLine": "TCF0016142207",
+    "lineName": "AP62120085 สามแยกหน้าที่ว่าการอำเภอ (หน้าอู่ไพศาล)-สามแยกท้ายบ้านลานกระบือ (หน้าร้าน เบิ้ม การไฟฟ้า)",
+    "totalPole": 97,
+    "distance": 1.998,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04501",
+    "tagLine": "TCF0016142146",
+    "lineName": "AP62120086 รีโคลสเซอร์ LKA03VR-01-สามแยกท้ายบ้านลานกระบือ (เสา 14.30 ต้นแรก)",
+    "totalPole": 119,
+    "distance": 3.293,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04501",
+    "tagLine": "TCF0016142211",
+    "lineName": "AP62120087 สามแยกไฟแดงตลาดลานกระบือ (ฟีดเดอร์ 1) ฝั่งซ้าย-หน้าร้านสงวนชัย",
+    "totalPole": 28,
+    "distance": 0.588,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04501",
+    "tagLine": "TCF0016142227",
+    "lineName": "AP62120088 สามแยกไฟแดงตลาดลานกระบือ (ฟีดเดอร์ 1) ฝั่งขวา-หน้าโลตัสลานกระบือ (เสาต้นที่เป็นสายเคเบิ้ลต้นสุดท้าย)",
+    "totalPole": 32,
+    "distance": 0.639,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04502",
+    "tagLine": "TCF0016141850",
+    "lineName": "AP62120089 ป้อมตำรวจเทศบาลไทรงาม-สามแยกวัดป่าไทรงาม",
+    "totalPole": 50,
+    "distance": 1.186,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04502",
+    "tagLine": "TCF0016141963",
+    "lineName": "AP62120090 บริษัทเมืองไทยสินเชื่อ-สถานีตำรวจภูธรอำเภอไทรงาม",
+    "totalPole": 47,
+    "distance": 1.343,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04601",
+    "tagLine": "TCF0016142022",
+    "lineName": "AP62120091 แยกบ้านหนองปลาไหล-หน้าสำนักงานการไฟฟ้าคลองลาน",
+    "totalPole": 51,
+    "distance": 1.447,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04601",
+    "tagLine": "TCF0016142099",
+    "lineName": "AP62120092 สี่แยกคลองน้ำไหล-หน้า โรงเรียนอนุบาลคลองลาน",
+    "totalPole": 79,
+    "distance": 2.371,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04602",
+    "tagLine": "TCF0016142258",
+    "lineName": "AP62120093 ตรงข้ามธนาคาร ธกส. อ.ปางศิลาทอง-สำนักงานตรวจสถาพรถจันทร์กระจ่าง",
+    "totalPole": 41,
+    "distance": 1.096,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04602",
+    "tagLine": "TCF0016142302",
+    "lineName": "AP62120094 ร้านแสงฟ้าซุปเปอร์มาร์เก็ต-สามแยกโรงเรียนอนุบาลปางศิลาทอง",
+    "totalPole": 12,
+    "distance": 0.231,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04602",
+    "tagLine": "TCF0016142325",
+    "lineName": "AP62120095 สามแยกเมืองไทยลิสซิ่ง-สะพานข้ามคลองหินชะโงก",
+    "totalPole": 9,
+    "distance": 0.29,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04602",
+    "tagLine": "TCF0016142357",
+    "lineName": "AP62120096 สามแยกโรงเรียนอนุบาลปางศิลาทอง-บ้านมอแสงทอง",
+    "totalPole": 36,
+    "distance": 1.225,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B04401",
+    "tagLine": "TCF0016143103",
+    "lineName": "AP62120097 ปากทางเข้าไป กฟส.พก.-หน้า สนง.ทีโอที",
+    "totalPole": 42,
+    "distance": 1.048,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B05101",
+    "tagLine": "TCF0016138054",
+    "lineName": "AP62120098 เส้นทางศรีมาลา แยกแอมเวย์ พิจิตร - ถนนศรีมาลา แยกสวรรค์สวีทซาวด์",
+    "totalPole": 134,
+    "distance": 2.93,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B05101",
+    "tagLine": "TCF0016137998",
+    "lineName": "AP62120099 เส้นทางสี่แยกโรงเรียนยอเซฟ พิจิตร - แยกสิงห์พิจิตรนำชัย (เส้นทางเฉลิมพระเกียรติ)",
+    "totalPole": 53,
+    "distance": 1.314,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B05103",
+    "tagLine": "TCF0016138924",
+    "lineName": "AP62120100 เส้นทางสี่แยกสากเหล็ก(ฝั่งซ้าย) - สำนักงานเทศบาลตำบลสากเหล็ก",
+    "totalPole": 56,
+    "distance": 1.321,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B05103",
+    "tagLine": "TCF0016139054",
+    "lineName": "AP62120101 เส้นทางสี่แยกสากเหล็ก(ฝั่งขวา) - แยกทางเข้าวัดป่าหวาย",
+    "totalPole": 58,
+    "distance": 1.393,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B05106",
+    "tagLine": "TCF0016139063",
+    "lineName": "AP62120102 เส้นทางแยกหน้าร้าน 7-11 - อบต.วังทรายพูน",
+    "totalPole": 75,
+    "distance": 1.573,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B05104",
+    "tagLine": "TCF0016139069",
+    "lineName": "AP62120103 เส้นทางสามแยกโรงเรียนสรรเพชญอัฏธมาพิทยา - โรงพยาบาลโพธิ์ประทับช้าง",
+    "totalPole": 30,
+    "distance": 1.112,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B05201",
+    "tagLine": "TCF0016139077",
+    "lineName": "AP62120104 เส้นทางบ้านไร่(ฝั่งซ้าย) - เทศบาลสามง่าม",
+    "totalPole": 104,
+    "distance": 2.72,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B05201",
+    "tagLine": "TCF0016139073",
+    "lineName": "AP62120105 เส้นทาง บ้านไร่(ฝั่งขวา) - ไปรษณีย์สามง่าม",
+    "totalPole": 85,
+    "distance": 1.938,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141148",
+    "lineName": "AP62120106 โรงแรมเวียงตาก 2 - สามแยกบ้านพักการประปาส่วนภูมิภาค",
+    "totalPole": 62,
+    "distance": 1.578,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141169",
+    "lineName": "AP62120107 สี่แยกหน้าศาลพระเจ้าตากสิน (ฝั่งซ้าย) - สี่แยกหลังวัดพร้าว",
+    "totalPole": 31,
+    "distance": 0.637,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141175",
+    "lineName": "AP62120108 สี่แยกหน้าศาลพระเจ้าตากสิน (ฝั่งขวา) - สี่แยกหลังวัดพร้าว",
+    "totalPole": 27,
+    "distance": 0.715,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141214",
+    "lineName": "AP62120109 สามแยกห้างทองสินสุวรรณ 3 (ฝั่งซ้าย) - หลังเทศบาลเมืองตาก",
+    "totalPole": 33,
+    "distance": 0.711,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141251",
+    "lineName": "AP62120110 สามแยกห้างทองสินสุวรรณ 3 (ฝั่งขวา) - หลังเทศบาลเมืองตาก",
+    "totalPole": 32,
+    "distance": 0.724,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141308",
+    "lineName": "AP62120111 ห้าแยกตรอกบ้านจีน - สี่แยกวัดพร้าว",
+    "totalPole": 51,
+    "distance": 1.158,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141356",
+    "lineName": "AP62120112 สี่แยกโรงเรียนตากสิน - สามแยกห้างทองสินสุวรรณ 3",
+    "totalPole": 42,
+    "distance": 0.986,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141422",
+    "lineName": "AP62120113 สี่แยกโรงพยาบาลสมเด็จพระเจ้าตากสิน - สาธารณสุขเทศบาลเมืองตาก",
+    "totalPole": 33,
+    "distance": 0.977,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141468",
+    "lineName": "AP62120114 สามแยกโรงเรียนตากพิทยาคม - สามแยกแขวงการทางตาก",
+    "totalPole": 45,
+    "distance": 1.193,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141509",
+    "lineName": "AP62120115 ศูนย์รถยนต์มาสด้าตาก - สี่แยกโรงพยาบาลสมเด็จพระเจ้าตากสิน",
+    "totalPole": 55,
+    "distance": 1.149,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03101",
+    "tagLine": "TCF0016141566",
+    "lineName": "AP62120116 สี่แยกโรงพยาบาลสมเด็จพระเจ้าตากสิน - ศาลากลางจังหวัดตาก",
+    "totalPole": 74,
+    "distance": 1.749,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03102",
+    "tagLine": "TCF0016141606",
+    "lineName": "AP62120117 ยูเทินเหนือปั้ม ESSO - สะพาน 6",
+    "totalPole": 67,
+    "distance": 1.66,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03102",
+    "tagLine": "TCF0016141623",
+    "lineName": "AP62120118 แยกสายตาก-วังเจ้า(สายเก่า) - สะพานวุฒิกุล",
+    "totalPole": 55,
+    "distance": 1.403,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03102",
+    "tagLine": "TCF0016141638",
+    "lineName": "AP62120119 สะพาน6 - ยูเทินเหนือปั้ม ESSO",
+    "totalPole": 71,
+    "distance": 1.727,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03102",
+    "tagLine": "TCF0016141676",
+    "lineName": "AP62120120 ปากซอยไฟฟ้าวังเจ้า - ธกส.สาขาวังเจ้า",
+    "totalPole": 45,
+    "distance": 0.926,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03102",
+    "tagLine": "TCF0016146122",
+    "lineName": "AP62120121 หน้าตลาดแปลงสินทรัพย์ - หน้าฟาร์มวัชรพุกก์",
+    "totalPole": 127,
+    "distance": 2.931,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03102",
+    "tagLine": "TCF0016141965",
+    "lineName": "AP62120122 หน้าฟาร์มวัชรพุกก์ - สามแยกขี้ควาย",
+    "totalPole": 93,
+    "distance": 2.105,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03103",
+    "tagLine": "TCF0016142014",
+    "lineName": "AP62120123 ตลาดนัดวัววังประจบ - กฟย.วังประจบ",
+    "totalPole": 24,
+    "distance": 0.705,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03103",
+    "tagLine": "TCF0016142051",
+    "lineName": "AP62120124 สภต.วังประจบ - ร.ร.วังประจบวิทยาคม",
+    "totalPole": 72,
+    "distance": 2.052,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03103",
+    "tagLine": "TCF0016142087",
+    "lineName": "AP62120125 อบต.โป่งแดง - สนามกีฬา อบต.โป่งแดง",
+    "totalPole": 15,
+    "distance": 0.681,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03201",
+    "tagLine": "TCF0016146114",
+    "lineName": "AP62120126 หน้าโรงเรียนประชาวิทย์บ้านตาก - หน้าเทศบาลบ้านตาก",
+    "totalPole": 123,
+    "distance": 2.74,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03201",
+    "tagLine": "TCF0016142110",
+    "lineName": "AP62120127 มุมร้านวัสดุก่อสร้างซอยธนาคารกรุงไทย - มุมก่อนข้ามสะพานฝั่งขวา",
+    "totalPole": 25,
+    "distance": 0.547,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03203",
+    "tagLine": "TCF0016142294",
+    "lineName": "AP62120128 ถนนสายหลักบ้านจัดสรร - บ้านจัดสรร ม.3,4 ต.สามเงา",
+    "totalPole": 33,
+    "distance": 0.843,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B03203",
+    "tagLine": "TCF0016142306",
+    "lineName": "AP62120129 ถนนสายหลักบ้านจัดสรร - บ้านจัดสรร ม.3,4 ต.สามเงา",
+    "totalPole": 41,
+    "distance": 0.833,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01405",
+    "tagLine": "TCF0016152497",
+    "lineName": "AP62120130 ตลาดทรัพย์ไพรวัลย์ - หน้าสำนักงานการไฟฟ้า",
+    "totalPole": 47,
+    "distance": 1.265,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08201",
+    "tagLine": "TCF0016144849",
+    "lineName": "AP62120131 สี่แยกสาธารณสุข(ฝั่งขวา) ถึง เสา D-TAC บ.สถาน(ฝั่งขวา)",
+    "totalPole": 167,
+    "distance": 5.114,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08201",
+    "tagLine": "TCF0016147668",
+    "lineName": "AP62120132 สี่แยกสาธารณสุข(ฝั่งซ้าย)-SF.6 จุดแบ่งแดน เวียงสา-น่าน(ฝั่งซ้าย)",
+    "totalPole": 254,
+    "distance": 5.095,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08201",
+    "tagLine": "TCF0016146129",
+    "lineName": "AP62120133 SF.6 หน้าไปรษณีย์(ฝั่งขวา)-สี่แยกตลาดสดเวียงสา(ฝั่งขวา)",
+    "totalPole": 46,
+    "distance": 1.004,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08201",
+    "tagLine": "TCF0016146141",
+    "lineName": "AP62120134 สี่แยกสาธารณสุข(ฝั่งซ้าย)-สี่แยกตลาดสดเวียงสา(ฝั่งซ้าย)",
+    "totalPole": 47,
+    "distance": 0.998,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08201",
+    "tagLine": "TCF0016146163",
+    "lineName": "AP62120135 สี่แยกตลาดสดเวียงสา(ฝั่งขวา)-Recolser บ.ไผ่งาม(ฝั่งขวา)",
+    "totalPole": 112,
+    "distance": 2.78,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08201",
+    "tagLine": "TCF0016146171",
+    "lineName": "AP62120136 สี่แยกตลาดสดเวียงสา(ฝั่งซ้าย)-SF.6 บ.ไผ่งาม(ฝั่งซ้าย)",
+    "totalPole": 130,
+    "distance": 2.81,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08201",
+    "tagLine": "TCF0016146181",
+    "lineName": "AP62120137 หน้า รพ.เวียงสา(ฝั่งซ้าย)-สี่แยกสาธารณสุข(ฝั่งซ้าย)",
+    "totalPole": 70,
+    "distance": 1.617,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08202",
+    "tagLine": "TCF0016165887",
+    "lineName": "AP62120138 หน้าโรงเรียนบ้านหนองห้า(ฝั่งขวา)-ที่ว่าการอำเภอนาน้อย(ฝั่งขวา)",
+    "totalPole": 118,
+    "distance": 3.296,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08202",
+    "tagLine": "TCF0016165888",
+    "lineName": "AP62120203 ที่ว่าการอำเภอนาน้อย(ฝั่งขวา)-หน้า รร.บ้านนาหลวง(ฝั่งขวา)",
+    "totalPole": 93,
+    "distance": 1.967,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08204",
+    "tagLine": "TCF0016165889",
+    "lineName": "AP62120140 หน้าไปรษณีย์ อ.นาหมื่น(ฝั่งซ้าย)-วัดนาทุนุง(ฝั่งซ้าย)",
+    "totalPole": 95,
+    "distance": 2.461,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08301",
+    "tagLine": "TCF0016146125",
+    "lineName": "AP62120141 สามแยกร้านทองธนพลทางไปหน้าอำเภอ ถึง สุดสี่เลนหน้า รพ.ยุพราชปัว",
+    "totalPole": 94,
+    "distance": 2.307,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08301",
+    "tagLine": "TCF0016146161",
+    "lineName": "AP62120142 สามแยกหน้าร้านนราปัว ถึง สะพานบ้านแหลง",
+    "totalPole": 58,
+    "distance": 1.448,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B02301",
+    "tagLine": "TCF0016139119",
+    "lineName": "AP62120143 (หน้าร้านเพ็ญจันทร์ค้าไม้ ถึง ริมยม)",
+    "totalPole": 142,
+    "distance": 3.871,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B02104",
+    "tagLine": "TCF0016139141",
+    "lineName": "AP62120144 (หน้าการไฟฟ้าบ้านด่านลานหอย ถึง บ้านวังลึก ต้นฟิกซ์คาปา)",
+    "totalPole": 97,
+    "distance": 4.551,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B02102",
+    "tagLine": "TCF0016139178",
+    "lineName": "AP62120145 (หน้าวัดวาลุการาม ถึง สี่เเยกคีรีมาศ)",
+    "totalPole": 59,
+    "distance": 1.35,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B11101",
+    "tagLine": "TCF0016137787",
+    "lineName": "AP62120146 แยกป้อมตำรวจแสงสิน-แยกเข้ารพ.สวรรคโลก",
+    "totalPole": 70,
+    "distance": 2.196,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B11102",
+    "tagLine": "TCF0016137824",
+    "lineName": "AP62120147 หน้าวัดราษฎร์ศรัทธาธรรม-แยกป้อมตำรวจบ้านเหมือง",
+    "totalPole": 68,
+    "distance": 2.481,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B11301",
+    "tagLine": "TCF0016137800",
+    "lineName": "AP62120148 หัวสะพานหน้าไปรษณีย์ศรีสัชฯ(ฝั่งขวา)-สามแยกหน้าวัดโบสถ์(ฝั่งขวา)",
+    "totalPole": 70,
+    "distance": 1.877,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B11201",
+    "tagLine": "TCF0016137816",
+    "lineName": "AP62120149 ปากทางโรงพยาบาลทุ่งเสลี่ยม-สามแยกหนองถ่าน",
+    "totalPole": 31,
+    "distance": 0.755,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016137885",
+    "lineName": "AP62120150 สี่แยกกรุงไทย - สี่แยกเจ้าสัว 1",
+    "totalPole": 90,
+    "distance": 1.906,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138578",
+    "lineName": "AP62120151 วงวียนใหญ่แม่สอด (ฝั่งขวา ) - ตลาดริมเมย",
+    "totalPole": 353,
+    "distance": 10.556,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138073",
+    "lineName": "AP62120152 ซอยข้างร้านกิกกะเฮิร์ทซ",
+    "totalPole": 19,
+    "distance": 0.538,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138093",
+    "lineName": "AP62120153 สี่แยกสมัครสรรพการ - สีแยกหัวฝาย",
+    "totalPole": 70,
+    "distance": 2.079,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138098",
+    "lineName": "AP62120154 สี่แยกสมัครสรรพการ - วงเวียนโรงเรียนสรรพวิทยาคม",
+    "totalPole": 56,
+    "distance": 1.272,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138105",
+    "lineName": "AP62120155 วงเวียนโรงเรียนสรรพวิทยาคม - สามแยกวัดวัดอรัญญเขต",
+    "totalPole": 59,
+    "distance": 1.368,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138109",
+    "lineName": "AP62120156 สามแยกพ่อเลี้ยงยงค์ - สี่แยกน้ำดื่ม JR",
+    "totalPole": 34,
+    "distance": 0.598,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138115",
+    "lineName": "AP62120157 สี่แยกน้ำดื่ม JR - สามแยกร้านไก่ทอดอิสลาม",
+    "totalPole": 55,
+    "distance": 1.179,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138119",
+    "lineName": "AP62120158 หน้าโรงพยาบาลแม่สอด",
+    "totalPole": 24,
+    "distance": 0.529,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138122",
+    "lineName": "AP62120159 ซอยข้างโรงพยาบาล - หลังที่ว่าการอำเภอแม่สอด",
+    "totalPole": 27,
+    "distance": 0.511,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138123",
+    "lineName": "AP62120160 สามแยกเทศบาลนครแม่สอด",
+    "totalPole": 68,
+    "distance": 2.063,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09103",
+    "tagLine": "TCF0016138053",
+    "lineName": "AP62120161 สํานักงานสาธารณสุขอําเภอแม่ระมาด - หน้าที่ว่าการอำเภอแม่ระมาด",
+    "totalPole": 81,
+    "distance": 1.88,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09102",
+    "tagLine": "TCF0016138011",
+    "lineName": "AP62120162 ข้างสํานักงานสาธารณสุขอําเภอท่าสองยาง - หน้าวัดแม่ต้านแหนือ ( 2 ฝั่งถนน )",
+    "totalPole": 109,
+    "distance": 3.258,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09104",
+    "tagLine": "TCF0016138016",
+    "lineName": "AP62120163 หน้าตลาดอำเภอพบพบพระ - สถานีตำรวจอำเภอพบพระ",
+    "totalPole": 111,
+    "distance": 2.653,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B09105",
+    "tagLine": "TCF0016138022",
+    "lineName": "AP62120164 หน้าโรงเรียนชุมชนบ้านอุ้มผาง - ซอยราษฏร์บำรุง 2",
+    "totalPole": 83,
+    "distance": 2.412,
+    "overallPoint": 0.25,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10101",
+    "tagLine": "TCC0016146127",
+    "lineName": "AP62120165 บริเวณอำเภอตะพานหิน -แยกท่าเรือน้ำลึก",
+    "totalPole": 88,
+    "distance": 2.047,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10101",
+    "tagLine": "TCF0016155198",
+    "lineName": "AP62120166 สะพานข้ามแม่น้ำน่าน - สี่แยกสิริวัฒน์ ฝั่ง เบทาโก",
+    "totalPole": 48,
+    "distance": 1.045,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10101",
+    "tagLine": "TCF0016155220",
+    "lineName": "AP62120167 สะพานข้ามแม่น้ำน่าน - สี่แยกสิริวัฒน์ ฝั่ง วัดเทวะ",
+    "totalPole": 49,
+    "distance": 1.063,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10101",
+    "tagLine": "TCF0016155414",
+    "lineName": "AP62120168 สามแยกหน้ากรมที่ดิน - ทางข้ามรถไฟ ฝั่ง TOT",
+    "totalPole": 31,
+    "distance": 0.803,
+    "overallPoint": 0.45,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10101",
+    "tagLine": "TCF0016155316",
+    "lineName": "AP62120169 สามแยกหน้ากรมที่ดิน ทางข้ามรถไฟ ฝั่ง ครังน้ำมัน",
+    "totalPole": 30,
+    "distance": 0.742,
+    "overallPoint": 0.45,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10101",
+    "tagLine": "TCC0016146155",
+    "lineName": "AP62120170 ริมทางรถไฟ-ทางเข้าหมู่บ้านหลังเฉินหลง",
+    "totalPole": 12,
+    "distance": 0.245,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10101",
+    "tagLine": "TCC0016146157",
+    "lineName": "AP62120171 แยกเข้าตลาด-หน้ารร นิวหัวหิน",
+    "totalPole": 27,
+    "distance": 0.677,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10301",
+    "tagLine": "TCC0016146164",
+    "lineName": "AP62120172 ตรงข้ามการไฟฟ้าสาขาโพทะเล-สะพานข้ามแม่น้ำยม",
+    "totalPole": 47,
+    "distance": 1.342,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10301",
+    "tagLine": "TCF0016146168",
+    "lineName": "AP62120173 ตรงข้ามการไฟฟ้าสาขาโพทะเล-ทางแยกเข้าทุ่งน้อย",
+    "totalPole": 43,
+    "distance": 1.48,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10301",
+    "tagLine": "TCF0016146175",
+    "lineName": "AP62120174 สะพานข้ามแม่น้ำยม-แยกเข้าท้ายน้ำ ฝั้งขวา",
+    "totalPole": 71,
+    "distance": 2.195,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10201",
+    "tagLine": "TCC0016146102",
+    "lineName": "AP62120175 หน้าไฟฟ้าสาขาบางมูลนาก - แยกไฟแดงบางมูลนาก",
+    "totalPole": 52,
+    "distance": 1.236,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10201",
+    "tagLine": "TCF0016168470",
+    "lineName": "AP62120176 หน้าไฟฟ้าสาขาบางมูลนาก - แยกไฟแดง ฝั่งตรงข้าม สำนักงาน",
+    "totalPole": 59,
+    "distance": 1.246,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10201",
+    "tagLine": "TCF0016146184",
+    "lineName": "AP62120177 แยกไฟแดง-หน้าโรงพยาบาลบางมูลนาก",
+    "totalPole": 65,
+    "distance": 2.393,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10401",
+    "tagLine": "TCF0016146188",
+    "lineName": "AP62120178 หน้าการไฟฟ้าทับคล้อฝั่ง F7-หน้าที่ว่าการอำเภอทับคล้อ",
+    "totalPole": 66,
+    "distance": 1.664,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B10401",
+    "tagLine": "TCF0016146190",
+    "lineName": "AP62120179 หน้าไฟฟ้าสาขาทับคล้อ-จุดแบ่งเขตตะพานหิน",
+    "totalPole": 229,
+    "distance": 5.256,
+    "overallPoint": 0.35,
+    "year": 2020
+  },
+  {
+    "peaCode": "B01101",
+    "tagLine": "TCF0016140781",
+    "lineName": "AP62120180 แยกแม็กโคร - หลังโรงเรียนเฉลิมขวัญสตรี",
+    "totalPole": 211,
+    "distance": 4.662,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B04101",
+    "tagLine": "TCC0015748419",
+    "lineName": "AP62120181 สามแยกทางเข้าวิทยาลัยเทคนิค-ป้อมตำรวจสี่แยกวัดบาง",
+    "totalPole": 59,
+    "distance": 1.145,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B04401",
+    "tagLine": "TCF0016143176",
+    "lineName": "AP62120182 เส้นทางเฉลิมพระเกียรติประเวศไพรวัลย์-สามแยกถนนประเวศไพรวัลย์",
+    "totalPole": 27,
+    "distance": 0.75,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B06101",
+    "tagLine": "TCF0016139085",
+    "lineName": "AP62120183 แยก รร.อต. ถึง สี่แยกพิทธณา",
+    "totalPole": 26,
+    "distance": 0.683,
+    "overallPoint": 1,
+    "year": 2021
+  },
+  {
+    "peaCode": "B06101",
+    "tagLine": "TCF0016139086",
+    "lineName": "AP62120184 แยกห้วยไผ่ขนส่ง ถึง สะพานวัดหมอนไม้",
+    "totalPole": 93,
+    "distance": 2.195,
+    "overallPoint": 0.35,
+    "year": 2021
+  },
+  {
+    "peaCode": "B06101",
+    "tagLine": "TCF0016138312",
+    "lineName": "AP62120185 สามแยกวัดธรรมมาธิปไตย ถึง หน้าโรงเรียนหัวเฉียว",
+    "totalPole": 89,
+    "distance": 2.076,
+    "overallPoint": 0.35,
+    "year": 2021
+  },
+  {
+    "peaCode": "B06101",
+    "tagLine": "TCF0016138308",
+    "lineName": "AP62120186 แยกหนองผา ถึง หน้าวัดนาโปร่งหนองผา",
+    "totalPole": 49,
+    "distance": 1.353,
+    "overallPoint": 0.35,
+    "year": 2021
+  },
+  {
+    "peaCode": "B06201",
+    "tagLine": "TCF0016139274",
+    "lineName": "AP62120187 บ้านวังพะเนียด ถึง แยกอบต.บ้านหม้อ",
+    "totalPole": 91,
+    "distance": 3.463,
+    "overallPoint": 0.35,
+    "year": 2021
+  },
+  {
+    "peaCode": "B07201",
+    "tagLine": "TCF0016146113",
+    "lineName": "AP62120188 ปากทางเข้าบ้านพระหลวงถึงวัดพระหลวง",
+    "totalPole": 59,
+    "distance": 0.906,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B07301",
+    "tagLine": "TCF0016138878",
+    "lineName": "AP62120189 ทางรถไฟบ้านปิน ถึง หน้าโรงเรียนลองวิทยา",
+    "totalPole": 100,
+    "distance": 2.366,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B07301",
+    "tagLine": "TCF0016138900",
+    "lineName": "AP62120190 หน้าโรงเรียนลองวิทยา-สามแยกนาหม้อ",
+    "totalPole": 49,
+    "distance": 1.084,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B07401",
+    "tagLine": "TCF0016146146",
+    "lineName": "AP62120191 บ้านเด่นนางฟ้อน-อบต.ทุ่งน้าว",
+    "totalPole": 29,
+    "distance": 0.888,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B07401",
+    "tagLine": "TCF0016146133",
+    "lineName": "AP62120192 บ้านแดนชุมพล-หน้าปั้มซัสโก้",
+    "totalPole": 33,
+    "distance": 1.075,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B07401",
+    "tagLine": "TCF0016146123",
+    "lineName": "AP62120193 สะพานแม่น้ำกาหลง-แยกบ้านกลางทุ่ง",
+    "totalPole": 54,
+    "distance": 1.069,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142113",
+    "lineName": "AP62120194 สะพานพัฒนาภาคเหนือ - หน้าวัดพระธาตุแช่แห้ง",
+    "totalPole": 83,
+    "distance": 2.083,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142142",
+    "lineName": "AP62120195 แยกบ้านฟ้าใหม่ - แยกหมอชูศักดิ์(หน้า รร. ซินจง)",
+    "totalPole": 48,
+    "distance": 0.884,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142158",
+    "lineName": "AP62120196 แยกช้างเผือก - แยกสายสวรรค์",
+    "totalPole": 77,
+    "distance": 1.838,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142161",
+    "lineName": "AP62120197 แยก ธกส. - แยกบ้านฟ้าใหม่",
+    "totalPole": 25,
+    "distance": 0.447,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142173",
+    "lineName": "AP62120198 หน้าวัดสวนตาล - วัดหัวข่วง",
+    "totalPole": 46,
+    "distance": 1.052,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142054",
+    "lineName": "AP62120199 หน้าสนามบินน่าน - ศูนย์การเรียนรู้และบริการวิชาการ เครือข่ายแห่งจุฬาลงกรณ์มหาวิทยาลัย",
+    "totalPole": 57,
+    "distance": 1.843,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142195",
+    "lineName": "AP62120200 แยกอีซูซุ - แยกตลาดอภัย",
+    "totalPole": 69,
+    "distance": 1.198,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142200",
+    "lineName": "AP62120201 แยกพญาวัด - ทางเข้าวัดเขาน้อย",
+    "totalPole": 57,
+    "distance": 1.323,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142365",
+    "lineName": "AP62120202 แยกวัดหัวข่วง - สามแยก สนง.พาณิชย์จังหวัดน่าน",
+    "totalPole": 35,
+    "distance": 0.713,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142386",
+    "lineName": "AP62120139 แยกช้างเผือก - หน้า มทร.ล้านนาน่าน",
+    "totalPole": 121,
+    "distance": 2.45,
+    "overallPoint": 1,
+    "year": 2020
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142391",
+    "lineName": "AP62120204 แยกมหายศ(แยก ร.พ. น่าน) - แยก สนง.สาธารณสุข น่าน",
+    "totalPole": 26,
+    "distance": 0.681,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142404",
+    "lineName": "AP62120205 แยก สนง.สาธารณสุข น่าน - แยก ถ.คำยอด(ข้างร้านชัยวัฒน์ยางยนต์)",
+    "totalPole": 76,
+    "distance": 1.838,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08101",
+    "tagLine": "TCF0016142441",
+    "lineName": "AP62120206 แยกพันต้น(ฝั่งขวา) - สะพานข้ามแม่น้ำสมุน",
+    "totalPole": 114,
+    "distance": 2.696,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08103",
+    "tagLine": "TCF0016142484",
+    "lineName": "AP62120207 แยกบ้านป่าคาใหม่ - แยกบ้านหลวง",
+    "totalPole": 45,
+    "distance": 1.536,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08103",
+    "tagLine": "TCF0016142508",
+    "lineName": "AP62120208 แยกบ้านสวนเสด็จ - แยกบ้านดอน",
+    "totalPole": 34,
+    "distance": 1.235,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B08102",
+    "tagLine": "TCF0016142524",
+    "lineName": "AP62120209 ครัวคุณตึ๋ง(สะพานข้ามห้วยน้ำท่า) - บ้านทุ่งกวาง",
+    "totalPole": 55,
+    "distance": 1.745,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B09101",
+    "tagLine": "TCF0016138124",
+    "lineName": "AP62120210 สี่แยกมามา - เครือสหพัฒน์",
+    "totalPole": 245,
+    "distance": 5.803,
+    "overallPoint": 0.25,
+    "year": 2021
+  },
+  {
+    "peaCode": "B12102",
+    "tagLine": "TCF0016210838",
+    "lineName": "AP62120211 โรงเรียนอนุบาลบึงสามัคคี - โรงเรียนบ้านระหานประชาศึกษา",
+    "totalPole": 100,
+    "distance": 3.045,
+    "overallPoint": 0,
+    "year": 2021
+  },
+  {
+    "peaCode": "B12101",
+    "tagLine": "TCF0016213778",
+    "lineName": "AP62120212 ใต้สะพานขาณุฯฝั่งสถานีตำรวจภูธรขาณุฯ - ฝั่งตรงข้าม ปตท.ขาณุฯ",
+    "totalPole": 41,
+    "distance": 1.14,
+    "overallPoint": 0,
+    "year": 2021
+  },
+  {
+    "peaCode": "B12101",
+    "tagLine": "TCF0016213796",
+    "lineName": "AP62120213 ใต้สะพานขาณุฯฝั่งอำเภอ - ปตท.ขาณุฯ",
+    "totalPole": 44,
+    "distance": 1.182,
+    "overallPoint": 0,
+    "year": 2021
+  },
+  {
+    "peaCode": "B12201",
+    "tagLine": "TCF0016210876",
+    "lineName": "AP62120214 ช.การค้า คลองขลุง - ตีนสะพานขามแม่น้ำปิงคลองขลุง",
+    "totalPole": 65,
+    "distance": 1.913,
+    "overallPoint": 0,
+    "year": 2021
+  },
+  {
+    "peaCode": "B12202",
+    "tagLine": "TCF0016210875",
+    "lineName": "AP62120215 หน้า กฟย.ทรายทอง - สถานีตำรวจภูธรทรายทอง",
+    "totalPole": 90,
+    "distance": 2.341,
+    "overallPoint": 0,
+    "year": 2021
+  },
+  {
+    "peaCode": "B12201",
+    "tagLine": "TCF0016213708",
+    "lineName": "AP62120216 ตีนสะพานขามแม่น้ำปิงคลองขลุง - YAMAHA ท่ามะเขือ",
+    "totalPole": 122,
+    "distance": 2.827,
+    "overallPoint": 0,
+    "year": 2021
+  },
+  {
+    "peaCode": "B12201",
+    "tagLine": "TCF0016213673",
+    "lineName": "AP62120217 ฝั่งตรงข้าม ช.การค้า คลองขลุง - ตีนสะพานขามแม่น้ำปิงคลองขลุง",
+    "totalPole": 85,
+    "distance": 1.835,
+    "overallPoint": 0,
+    "year": 2021
   }
 ]
