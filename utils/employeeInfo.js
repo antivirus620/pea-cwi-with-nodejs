@@ -1,10 +1,9 @@
 // fetch SOAP Employee Info
 const soapRequest = require('easy-soap-request');
 const xml2js = require('xml2js');
-const ErrorResponse = require('./errorResponse');
 
 const employeeInfo = async username => {
-  const url = process.env.EMPLOYEE_INFO_URL;
+  const url = 'https://idm.pea.co.th/webservices/EmployeeServices.asmx?wsdl';
   const Headers = {
     'Content-Type': 'text/xml;charset=UTF-8',
     soapAction: process.env.EMPLOYEE_INFO_SOAP_ACTION
@@ -24,64 +23,72 @@ const employeeInfo = async username => {
             </request>
         </GetEmployeeInfoByUsername>
     </Body>
-</Envelope>`;
+  </Envelope>`;
 
   try {
     const { response } = await soapRequest({
       url: url,
       headers: Headers,
-      xml: xml,
+      xml,
       timeout: 1000
     }); // Optional timeout parameter(milliseconds)
 
     const { headers, body, statusCode } = response;
 
-    // parse to JSON object
     const options = {
       explicitArray: false,
       tagNameProcessors: [xml2js.processors.stripPrefix]
     };
 
-    const result = await xml2js.parseStringPromise(body, options);
+    // parse to JSON object
+    const xmlResult = await xml2js.parseStringPromise(body, options);
 
-    if (
-      result.Envelope.Body.GetEmployeeInfoByUsernameResponse
-        .GetEmployeeInfoByUsernameResult.ResponseMsg !== 'Success'
-    ) {
-      return 'username not found';
+    const result =
+      xmlResult.Envelope.Body.GetEmployeeInfoByUsernameResponse
+        .GetEmployeeInfoByUsernameResult;
+
+    let data = {};
+
+    if (result.ResponseCode === 'EAM0001') {
+      // หา user ไม่เจอ
+      data.result = false;
+
+      return data;
+    } else if (result.ResponseCode === 'WSV0000') {
+      // หา User เจอ
+      data.result = true;
+
+      // destructuring เอาเฉพาะข้อมูลที่ต้องการ
+      const {
+        Username,
+        TitleFullName,
+        FirstName,
+        LastName,
+        DepartmentSap,
+        Email,
+        NewOrganizationalCode,
+        BaCode,
+        Peacode,
+        Peaname,
+        Peaname1
+      } = result.ResultObject;
+
+      data.user = {
+        employeeId: Username,
+        titleFullName: TitleFullName,
+        firstName: FirstName,
+        lastName: LastName,
+        departmentSap: DepartmentSap,
+        email: Email,
+        newOrganizationalCode: NewOrganizationalCode,
+        baCode: BaCode,
+        peaCode: Peacode,
+        peaName: Peaname,
+        peaFullName: Peaname1
+      };
+
+      return data;
     }
-
-    const {
-      Username,
-      TitleFullName,
-      FirstName,
-      LastName,
-      DepartmentSap,
-      Email,
-      NewOrganizationalCode,
-      BaCode,
-      Peacode,
-      Peaname,
-      Peaname1
-    } = result.Envelope.Body.GetEmployeeInfoByUsernameResponse.GetEmployeeInfoByUsernameResult.ResultObject;
-
-    const data = {
-      employeeId: Username,
-      titleFullName: TitleFullName,
-      firstName: FirstName,
-      lastName: LastName,
-      departmentSap: DepartmentSap,
-      email: Email,
-      newOrganizationalCode: NewOrganizationalCode,
-      baCode: BaCode,
-      peaCode: Peacode,
-      peaName: Peaname,
-      peaFullName: Peaname1
-    };
-
-    console.log(result.Envelope.Body.GetEmployeeInfoByUsernameResponse);
-
-    return data;
   } catch (err) {
     console.log(err);
   }

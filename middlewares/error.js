@@ -6,8 +6,10 @@ const errorHandler = (err, req, res, next) => {
 
   let error = { ...err };
 
+  error.message = err.message;
+
   // หา case Error
-  console.log(err);
+  // console.log(err);
 
   // *Setting ERROR case
   // Mongoose bad ObjectId (หาไม่เจอ หรือไม่ถูก format)
@@ -34,10 +36,10 @@ const errorHandler = (err, req, res, next) => {
   }
 
   // *Send error response to client จะ set ทั้ง CASE และ Default
-  res.status(error.statusCode || 500).json({
-    sucess: false,
-    error: error.message || `Server Error`
-  });
+
+  res
+    .status(error.statusCode || 500)
+    .json({ success: false, error: error.message || `Server Error` });
 };
 
 module.exports = errorHandler;

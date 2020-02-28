@@ -27,13 +27,15 @@ exports.login = asyncHandler(async (req, res, next) => {
   // if invalid > invalid credential
 
   // get idm info
-  let peaUser = await employeeInfo(username);
+  let { result, user } = await employeeInfo(username);
 
-  if (!peaUser.success) {
-    return next(new ErrorResponse('User not found', 400));
+  if (!result) {
+    return next(
+      new ErrorResponse(`Username ${username} is not found in IDM Server `, 404)
+    );
   }
 
-  console.log(peaUser);
+  // console.log(user);
 
   // generate token
 
@@ -41,6 +43,6 @@ exports.login = asyncHandler(async (req, res, next) => {
 
   res.status(200).json({
     success: true,
-    data: peaUser
+    data: user
   });
 });
