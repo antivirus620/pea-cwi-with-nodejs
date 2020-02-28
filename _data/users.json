@@ -1,11 +1,11 @@
 [
   {
-    "company": "TAMS",
+    "company": "admin",
     "username": "admin",
     "email": "admin@gmail.com",
     "firstName": "Admin",
     "lastName": "Account",
-    "group": "tams",
+    "group": "admin",
     "role": "user",
     "password": "123456"
   },

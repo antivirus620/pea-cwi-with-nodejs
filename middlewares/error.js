@@ -7,7 +7,7 @@ const errorHandler = (err, req, res, next) => {
   let error = { ...err };
 
   // หา case Error
-  // console.log(err);
+  console.log(err);
 
   // *Setting ERROR case
   // Mongoose bad ObjectId (หาไม่เจอ หรือไม่ถูก format)

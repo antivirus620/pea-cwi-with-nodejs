@@ -16,20 +16,21 @@ const UserSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['user', 'pea', 'operator'],
+    enum: ['user'],
     default: 'user'
   },
   group: {
-    enum: ['tams', 'pea', 'operator'],
-    default: 'user'
+    type: String,
+    enum: ['operator', 'pea'],
+    default: 'pea'
   },
   firstName: {
     type: String,
-    required: [true, 'Please add your frist name']
+    required: [true, 'Please add your fristname']
   },
   lastName: {
     type: String,
-    required: [true, 'Please add your frist name']
+    required: [true, 'Please add your lastname']
   },
   password: {
     type: String,

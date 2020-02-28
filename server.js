@@ -16,6 +16,7 @@ connectDB();
 // import routes files
 const lines = require('./routes/organizationLine/lines');
 const results = require('./routes/organizationLine/results');
+const auth = require('./routes/auth');
 
 const app = express();
 
@@ -31,6 +32,7 @@ if (process.env.NODE_ENV === 'development') {
 // Moute Routes
 app.use('/api/v1/lines', lines);
 app.use('/api/v1/results', results);
+app.use('/api/v1/auth', auth);
 
 // Moute Error Handler
 app.use(errorHandler);
