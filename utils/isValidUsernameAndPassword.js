@@ -51,8 +51,19 @@ const isValidUsernameAndPassword = async (username, password) => {
     ResponseMsg,
     ResultObject
   } = result.Envelope.Body.IsValidUsernameAndPasswordResponse.IsValidUsernameAndPasswordResult;
+  console.log(
+    result.Envelope.Body.IsValidUsernameAndPasswordResponse
+      .IsValidUsernameAndPasswordResult
+  );
 
-  const data = ResultObject == 'true';
+  let data = {};
+
+  if (ResponseCode === 'SSO0013') {
+    data.result = false;
+    data.message = ResponseMsg;
+  }
+
+  data.result = ResultObject == 'true';
 
   return data;
 };

@@ -28,8 +28,8 @@ exports.login = asyncHandler(async (req, res, next) => {
     const isValid = await isValidUsernameAndPassword(username, password);
 
     // if invalid > check username and password in database
-    if (!isValid) {
-      return next(new ErrorResponse(`Invalid Credential`, 400));
+    if (!isValid.result) {
+      return next(new ErrorResponse(`${isValid.message}`, 401));
     }
 
     // get idm info
@@ -70,8 +70,8 @@ exports.login = asyncHandler(async (req, res, next) => {
     const isValid = await isValidUsernameAndPassword(username, password);
 
     // if invalid > check username and password in database
-    if (!isValid) {
-      return next(new ErrorResponse(`Invalid Credential`, 401));
+    if (!isValid.result) {
+      return next(new ErrorResponse(`${isValid.message}`, 401));
     }
 
     if (user.role !== 'admin') {
