@@ -74,18 +74,16 @@ const employeeInfo = async username => {
       } = result.ResultObject;
 
       data.user = {
-        employeeId: Username,
-        titleFullName: TitleFullName,
+        username: Username,
+        titleName: TitleFullName,
         firstName: FirstName,
         lastName: LastName,
         departmentSap: DepartmentSap,
         email: Email,
-        newOrganizationalCode: NewOrganizationalCode,
-        baCode: BaCode,
-        peaCode: Peacode,
-        peaName: Peaname,
-        peaFullName: Peaname1
+        peaCode: Peacode
       };
+
+      // console.log(data);
 
       return data;
     }

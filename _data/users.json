@@ -1,152 +1,156 @@
 [
   {
-    "company": "admin",
+    "company": "pea",
     "username": "admin",
     "email": "admin@gmail.com",
+    "titleName": "Mr",
     "firstName": "Admin",
     "lastName": "Account",
-    "group": "admin",
+    "group": "pea",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "pea",
     "username": "user",
     "email": "user@gmail.com",
+    "titleName": "Mr",
     "firstName": "User",
     "lastName": "Account",
     "group": "pea",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "tuc",
     "username": "john",
     "email": "john@gmail.com",
+    "titleName": "Mr",
     "firstName": "John",
     "lastName": "Doe",
     "group": "operator",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "awn",
     "username": "kevin",
     "email": "kevin@gmail.com",
+    "titleName": "Mr",
     "firstName": "Kevin",
     "lastName": "Smith",
     "group": "operator",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "tot",
     "username": "mary",
     "email": "mary@gmail.com",
+    "titleName": "Mr",
     "firstName": "Mary",
     "lastName": "Williams",
     "group": "operator",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "ais",
     "username": "sasha",
     "email": "sasha@gmail.com",
+    "titleName": "Mr",
     "firstName": "Sasha",
     "lastName": "Ryan",
     "group": "operator",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "pea",
     "username": "greg",
     "email": "greg@gmail.com",
+    "titleName": "Mr",
     "firstName": "Greg",
     "lastName": "Harris",
     "group": "pea",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "pea",
     "username": "derek",
     "email": "derek@gmail.com",
+    "titleName": "Mr",
     "firstName": "Derek",
     "lastName": "Glover",
     "group": "pea",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "pea",
     "username": "steph",
     "email": "steph@gmail.com",
+    "titleName": "Mr",
     "firstName": "Stephanie",
     "lastName": "Hanson",
     "group": "pea",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "pea",
     "username": "jerry",
     "email": "jerry@gmail.com",
+    "titleName": "Mr",
     "firstName": "Jerry",
     "lastName": "Wiliams",
     "group": "pea",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "pea",
     "username": "maggie",
     "email": "maggie@gmail.com",
+    "titleName": "Mr",
     "firstName": "Maggie",
     "lastName": "Johnson",
     "group": "pea",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "pea",
     "username": "barry",
     "email": "barry@gmail.com",
+    "titleName": "Mr",
     "firstName": "Barry",
     "lastName": "Dickens",
     "group": "pea",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "pea",
     "username": "ryan",
     "email": "ryan@gmail.com",
+    "titleName": "Mr",
     "firstName": "Ryan",
     "lastName": "Bolin",
     "group": "pea",
     "role": "user",
-    "password": "123456"
+    "password": 123456
   },
   {
     "company": "pea",
     "username": "sara",
     "email": "sara@gmail.com",
+    "titleName": "Mrs",
     "firstName": "Sara",
     "lastName": "Kensing",
     "group": "pea",
     "role": "user",
-    "password": "123456"
-  },
-  {
-    "company": "pea",
-    "username": "503015",
-    "email": "teeruch.kae@pea.co.th",
-    "firstName": "Teeruch",
-    "lastName": "Kaewsritas",
-    "group": "pea",
-    "role": "user",
-    "password": "123456"
+    "password": 123456
   }
 ]

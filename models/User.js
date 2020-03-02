@@ -1,9 +1,11 @@
+const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema({
   username: {
     type: String,
-    required: [true, 'Please add a username']
+    required: [true, 'Please add a username'],
+    unique: true
   },
   email: {
     type: String,
@@ -14,15 +16,21 @@ const UserSchema = new mongoose.Schema({
     required: [true, 'Please add an email'],
     unique: true
   },
-  role: {
+  password: {
     type: String,
-    enum: ['user'],
-    default: 'user'
+    required: [true, 'Please add a password'],
+    minlength: 6,
+    select: false
   },
-  group: {
+  peaCode: {
     type: String,
-    enum: ['operator', 'pea'],
-    default: 'pea'
+    required: [true, 'Please add PEA code'],
+    default: 'Z00000'
+  },
+  titleName: {
+    type: String,
+    required: [true, 'Please add your title name'],
+    default: 'นาย'
   },
   firstName: {
     type: String,
@@ -32,11 +40,15 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please add your lastname']
   },
-  password: {
+  role: {
     type: String,
-    required: [true, 'Please add a password'],
-    minlength: 6,
-    select: false
+    enum: ['user'],
+    default: 'user'
+  },
+  group: {
+    type: String,
+    enum: ['operator', 'pea'],
+    default: 'pea'
   },
   company: {
     type: String,
@@ -49,5 +61,21 @@ const UserSchema = new mongoose.Schema({
     default: Date.now
   }
 });
+
+UserSchema.pre('save', async function(next) {
+  // ใช้แบบ Async
+  const salt = await bcrypt.genSalt(10);
+
+  // เก็บ hash ลง DB แบบ asynchronous
+  this.password = await bcrypt.hash(this.password, salt);
+
+  next();
+});
+
+// ใช้ methods : เอาผลจาก UserSchema ไปใช้ใน controllers
+UserSchema.methods.matchPassword = async function(enteredPassword) {
+  // return true or false
+  return await bcrypt.compare(enteredPassword, this.password);
+};
 
 module.exports = mongoose.model('User', UserSchema);

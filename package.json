@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/arigatopix/pea-cwi-with-nodejs#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "easy-soap-request": "^3.2.0",

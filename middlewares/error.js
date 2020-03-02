@@ -12,6 +12,12 @@ const errorHandler = (err, req, res, next) => {
   // console.log(err);
 
   // *Setting ERROR case
+  // SOAP IDM Service ERROR
+  if (err.code === 'ECONNABORTED') {
+    const message = `Invalid Credential in IDM Server`;
+    error = new ErrorResponse(message, 401);
+  }
+
   // Mongoose bad ObjectId (หาไม่เจอ หรือไม่ถูก format)
   if (err.name === 'CastError') {
     // * CastError กรณี id กรอกเข้ามาไม่ถูกต้อง
