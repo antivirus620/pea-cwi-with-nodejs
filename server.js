@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan'); // logger console
 const colors = require('colors');
+const cookiePaser = require('cookie-parser');
 const connectDB = require('./config/db');
 
 // Load Middleware
@@ -28,6 +29,9 @@ if (process.env.NODE_ENV === 'development') {
   // logger to console
   app.use(morgan('dev'));
 }
+
+// Cookie-paser
+app.use(cookiePaser());
 
 // Moute Routes
 app.use('/api/v1/lines', lines);

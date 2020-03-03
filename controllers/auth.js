@@ -31,9 +31,8 @@ exports.register = asyncHandler(async (req, res, next) => {
     role
   });
 
-  const token = user.getSignJwtToken();
-
-  res.status(200).json({ success: true, token });
+  // send token and cookie to client
+  sendTokenResponse(user, 200, res);
 });
 
 // @desc    Login
@@ -142,12 +141,8 @@ exports.login = asyncHandler(async (req, res, next) => {
     }
   }
 
-  const token = user.getSignJwtToken();
-
-  res.status(200).json({
-    success: true,
-    token
-  });
+  // send token and cookie to client
+  sendTokenResponse(user, 200, res);
 });
 
 // @desc    Get Current User
@@ -169,3 +164,30 @@ exports.login = asyncHandler(async (req, res, next) => {
 // @desc    Forgot password
 // @route   POST /api/v1/auth/forgotpassword
 // @access  Public
+
+// * Get token from model, create cookie and send response
+const sendTokenResponse = (user, statusCode, res) => {
+  const token = user.getSignJwtToken();
+
+  // option for cookie
+  const options = {
+    expires: new Date(
+      Date.now() + process.env.JWT_COOKIE_EXPIRE * 24 * 60 * 60 * 100
+    ),
+    httpOnly: true // for client side script
+  };
+
+  // set sucure cookie
+  if (process.env.NODE_ENV === 'production') {
+    options.secure = true;
+  }
+
+  // send to client
+  res
+    .status(200)
+    .cookie('token', token, options)
+    .json({
+      success: true,
+      token
+    });
+};
