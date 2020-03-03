@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router({ mergeParams: true });
-const { protect } = require('../../middlewares/auth');
+const { protect, authorize } = require('../../middlewares/auth');
 const {
   getResults,
   getResult,
@@ -12,12 +12,12 @@ const {
 router
   .route('/')
   .get(getResults)
-  .post(protect, addResult);
+  .post(protect, authorize('admin', 'pea'), addResult);
 
 router
   .route('/:id')
   .get(getResult)
-  .put(protect, updateResult)
-  .delete(protect, deleteResult);
+  .put(protect, authorize('admin', 'pea'), updateResult)
+  .delete(protect, authorize('admin', 'pea'), deleteResult);
 
 module.exports = router;

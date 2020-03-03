@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { protect } = require('../../middlewares/auth');
+const { protect, authorize } = require('../../middlewares/auth');
 
 // Import from controllers
 const {
@@ -23,12 +23,12 @@ router.use('/:lineId/results', resultRouter);
 router
   .route('/')
   .get(getLines)
-  .post(protect, createLine);
+  .post(protect, authorize('admin', 'pea'), createLine);
 
 router
   .route('/:id')
   .get(getLine)
-  .put(protect, updateLine)
-  .delete(protect, deleteLine);
+  .put(protect, authorize('admin', 'pea'), updateLine)
+  .delete(protect, authorize('admin', 'pea'), deleteLine);
 
 module.exports = router;
