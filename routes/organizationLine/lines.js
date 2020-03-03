@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const advanceResults = require('../../middlewares/advanceResults');
+const Line = require('../../models/organizationLine/Line');
 const { protect, authorize } = require('../../middlewares/auth');
 
 // Import from controllers
@@ -22,7 +24,7 @@ router.use('/:lineId/results', resultRouter);
 
 router
   .route('/')
-  .get(getLines)
+  .get(advanceResults(Line), getLines)
   .post(protect, authorize('admin', 'pea'), createLine);
 
 router

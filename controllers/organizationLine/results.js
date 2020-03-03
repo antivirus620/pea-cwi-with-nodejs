@@ -9,20 +9,16 @@ const asyncHandler = require('../../middlewares/async');
 // @route   GET /api/v1/lines/:lineId/results
 // @access  Public
 exports.getResults = asyncHandler(async (req, res, next) => {
-  let query;
-
   if (req.params.lineId) {
-    query = Result.find({ line: req.params.lineId });
-  } else {
-    query = Result.find().populate({
-      path: 'line',
-      select: 'tagLine lineName'
+    const results = await Result.find({ line: req.params.lineId });
+    return res.status(200).json({
+      success: true,
+      count: results.length,
+      data: results
     });
+  } else {
+    return res.status(200).json(res.advanceResults);
   }
-
-  results = await query;
-
-  res.status(200).json({ success: true, count: results.length, data: results });
 });
 
 // @desc    Get result
@@ -31,7 +27,7 @@ exports.getResults = asyncHandler(async (req, res, next) => {
 exports.getResult = asyncHandler(async (req, res, next) => {
   const result = await Result.findById(req.params.id).populate({
     path: 'line',
-    select: 'peaName lineName'
+    select: 'peaCode lineName'
   });
 
   if (!result) {

@@ -1,5 +1,8 @@
 const express = require('express');
 const router = express.Router({ mergeParams: true });
+
+const Result = require('../../models/organizationLine/Result');
+const advanceResults = require('../../middlewares/advanceResults');
 const { protect, authorize } = require('../../middlewares/auth');
 const {
   getResults,
@@ -11,7 +14,13 @@ const {
 
 router
   .route('/')
-  .get(getResults)
+  .get(
+    advanceResults(Result, {
+      path: 'line',
+      select: 'peaCode lineName'
+    }),
+    getResults
+  )
   .post(protect, authorize('admin', 'pea'), addResult);
 
 router
