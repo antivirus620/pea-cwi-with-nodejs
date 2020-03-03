@@ -1,7 +1,7 @@
 const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middlewares/async');
-const isValidUsernameAndPassword = require('../utils/isValidUsernameAndPassword');
-const employeeInfo = require('../utils/employeeInfo');
+const isValidUsernameAndPassword = require('../utils/idmServices/isValidUsernameAndPassword');
+const employeeInfo = require('../utils/idmServices/employeeInfo');
 const User = require('../models/User');
 
 // @desc    Register
@@ -31,7 +31,9 @@ exports.register = asyncHandler(async (req, res, next) => {
     role
   });
 
-  res.status(200).json({ success: true, data: user });
+  const token = user.getSignJwtToken();
+
+  res.status(200).json({ success: true, token });
 });
 
 // @desc    Login

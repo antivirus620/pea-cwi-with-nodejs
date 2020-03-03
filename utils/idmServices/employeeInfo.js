@@ -3,7 +3,7 @@ const soapRequest = require('easy-soap-request');
 const xml2js = require('xml2js');
 
 const employeeInfo = async username => {
-  const url = 'https://idm.pea.co.th/webservices/EmployeeServices.asmx?wsdl';
+  const url = process.env.EMPLOYEE_INFO_URL;
   const Headers = {
     'Content-Type': 'text/xml;charset=UTF-8',
     soapAction: process.env.EMPLOYEE_INFO_SOAP_ACTION
