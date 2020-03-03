@@ -43,8 +43,8 @@ const UserSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['user'],
-    default: 'user'
+    enum: ['pea', 'operator'],
+    default: 'operator'
   },
   group: {
     type: String,

@@ -7,18 +7,7 @@
     "firstName": "Admin",
     "lastName": "Account",
     "group": "pea",
-    "role": "user",
-    "password": 123456
-  },
-  {
-    "company": "pea",
-    "username": "user",
-    "email": "user@gmail.com",
-    "titleName": "Mr",
-    "firstName": "User",
-    "lastName": "Account",
-    "group": "pea",
-    "role": "user",
+    "role": "pea",
     "password": 123456
   },
   {
@@ -29,7 +18,7 @@
     "firstName": "John",
     "lastName": "Doe",
     "group": "operator",
-    "role": "user",
+    "role": "operator",
     "password": 123456
   },
   {
@@ -40,7 +29,7 @@
     "firstName": "Kevin",
     "lastName": "Smith",
     "group": "operator",
-    "role": "user",
+    "role": "operator",
     "password": 123456
   },
   {
@@ -51,7 +40,7 @@
     "firstName": "Mary",
     "lastName": "Williams",
     "group": "operator",
-    "role": "user",
+    "role": "operator",
     "password": 123456
   },
   {
@@ -62,95 +51,7 @@
     "firstName": "Sasha",
     "lastName": "Ryan",
     "group": "operator",
-    "role": "user",
-    "password": 123456
-  },
-  {
-    "company": "pea",
-    "username": "greg",
-    "email": "greg@gmail.com",
-    "titleName": "Mr",
-    "firstName": "Greg",
-    "lastName": "Harris",
-    "group": "pea",
-    "role": "user",
-    "password": 123456
-  },
-  {
-    "company": "pea",
-    "username": "derek",
-    "email": "derek@gmail.com",
-    "titleName": "Mr",
-    "firstName": "Derek",
-    "lastName": "Glover",
-    "group": "pea",
-    "role": "user",
-    "password": 123456
-  },
-  {
-    "company": "pea",
-    "username": "steph",
-    "email": "steph@gmail.com",
-    "titleName": "Mr",
-    "firstName": "Stephanie",
-    "lastName": "Hanson",
-    "group": "pea",
-    "role": "user",
-    "password": 123456
-  },
-  {
-    "company": "pea",
-    "username": "jerry",
-    "email": "jerry@gmail.com",
-    "titleName": "Mr",
-    "firstName": "Jerry",
-    "lastName": "Wiliams",
-    "group": "pea",
-    "role": "user",
-    "password": 123456
-  },
-  {
-    "company": "pea",
-    "username": "maggie",
-    "email": "maggie@gmail.com",
-    "titleName": "Mr",
-    "firstName": "Maggie",
-    "lastName": "Johnson",
-    "group": "pea",
-    "role": "user",
-    "password": 123456
-  },
-  {
-    "company": "pea",
-    "username": "barry",
-    "email": "barry@gmail.com",
-    "titleName": "Mr",
-    "firstName": "Barry",
-    "lastName": "Dickens",
-    "group": "pea",
-    "role": "user",
-    "password": 123456
-  },
-  {
-    "company": "pea",
-    "username": "ryan",
-    "email": "ryan@gmail.com",
-    "titleName": "Mr",
-    "firstName": "Ryan",
-    "lastName": "Bolin",
-    "group": "pea",
-    "role": "user",
-    "password": 123456
-  },
-  {
-    "company": "pea",
-    "username": "sara",
-    "email": "sara@gmail.com",
-    "titleName": "Mrs",
-    "firstName": "Sara",
-    "lastName": "Kensing",
-    "group": "pea",
-    "role": "user",
+    "role": "operator",
     "password": 123456
   }
 ]

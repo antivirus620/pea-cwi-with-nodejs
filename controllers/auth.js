@@ -15,8 +15,7 @@ exports.register = asyncHandler(async (req, res, next) => {
     titleName,
     firstName,
     lastName,
-    company,
-    role
+    company
   } = req.body;
 
   // Create user
@@ -27,8 +26,7 @@ exports.register = asyncHandler(async (req, res, next) => {
     titleName,
     firstName,
     lastName,
-    company,
-    role
+    company
   });
 
   // send token and cookie to client
@@ -85,7 +83,7 @@ exports.login = asyncHandler(async (req, res, next) => {
       password,
       email,
       peaCode,
-      role: 'user',
+      role: 'pea',
       group: 'pea',
       company: 'pea'
     });
