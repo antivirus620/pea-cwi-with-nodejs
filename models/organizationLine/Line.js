@@ -5,7 +5,7 @@ const LineSchema = new mongoose.Schema(
   {
     peaCode: {
       type: String,
-      required: [true, 'Please add a PEA Name']
+      required: [true, 'Please add a peaCode']
     },
     tagLine: {
       type: String,

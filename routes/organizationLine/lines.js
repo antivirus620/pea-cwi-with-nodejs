@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const { protect } = require('../../middlewares/auth');
+
 // Import from controllers
 const {
   getLines,
@@ -21,12 +23,12 @@ router.use('/:lineId/results', resultRouter);
 router
   .route('/')
   .get(getLines)
-  .post(createLine);
+  .post(protect, createLine);
 
 router
   .route('/:id')
   .get(getLine)
-  .put(updateLine)
-  .delete(deleteLine);
+  .put(protect, updateLine)
+  .delete(protect, deleteLine);
 
 module.exports = router;

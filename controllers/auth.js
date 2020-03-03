@@ -148,6 +148,14 @@ exports.login = asyncHandler(async (req, res, next) => {
 // @desc    Get Current User
 // @route   POST /api/v1/auth/me
 // @access  Private
+exports.getMe = asyncHandler(async (req, res, next) => {
+  const user = await User.findById(req.user.id);
+
+  res.status(200).json({
+    success: true,
+    data: user
+  });
+});
 
 // @desc    Update user details
 // @route   PUT /api/v1/auth/updatedetails

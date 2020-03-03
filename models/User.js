@@ -83,7 +83,7 @@ UserSchema.methods.matchPassword = async function(enteredPassword) {
 UserSchema.methods.getSignJwtToken = function() {
   return jwt.sign(
     {
-      _id: this.id
+      id: this._id
     },
     process.env.JWT_SECRET,
     {
