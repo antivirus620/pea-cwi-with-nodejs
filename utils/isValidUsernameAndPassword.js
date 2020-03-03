@@ -51,10 +51,6 @@ const isValidUsernameAndPassword = async (username, password) => {
     ResponseMsg,
     ResultObject
   } = result.Envelope.Body.IsValidUsernameAndPasswordResponse.IsValidUsernameAndPasswordResult;
-  console.log(
-    result.Envelope.Body.IsValidUsernameAndPasswordResponse
-      .IsValidUsernameAndPasswordResult
-  );
 
   let data = {};
 

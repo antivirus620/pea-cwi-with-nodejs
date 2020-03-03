@@ -1,4 +1,3 @@
-const jwt = require('jsonwebtoken');
 const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middlewares/async');
 const isValidUsernameAndPassword = require('../utils/isValidUsernameAndPassword');
@@ -8,6 +7,32 @@ const User = require('../models/User');
 // @desc    Register
 // @route   POST /api/v1/auth/register
 // @access  Public
+exports.register = asyncHandler(async (req, res, next) => {
+  const {
+    username,
+    email,
+    password,
+    titleName,
+    firstName,
+    lastName,
+    company,
+    role
+  } = req.body;
+
+  // Create user
+  const user = await User.create({
+    username,
+    email,
+    password,
+    titleName,
+    firstName,
+    lastName,
+    company,
+    role
+  });
+
+  res.status(200).json({ success: true, data: user });
+});
 
 // @desc    Login
 // @route   POST /api/v1/auth/login
@@ -25,15 +50,15 @@ exports.login = asyncHandler(async (req, res, next) => {
   // find username, password in mongoDB
   let user = await User.findOne({ username }).select('+password');
 
-  if (!user || user['group'] === 'pea') {
-    // กรณีเป็น USER ของ PEA หรือ ไม่มี USER นี้ในระบบ
+  if (!user) {
+    // กรณีไม่มี USER นี้ในระบบ
 
     // check valid in idm
     const isValid = await isValidUsernameAndPassword(username, password);
 
     // username ถูก แต่ password ไม่ถูกต้อง
     if (!isValid.result) {
-      return next(new ErrorResponse(`${isValid.message}`, 401));
+      return next(new ErrorResponse(`Username and password is not found`, 404));
     }
 
     // ถ้าข้อมูลถูกต้อง เอาข้อมูล IDM มาแสดง
@@ -51,26 +76,18 @@ exports.login = asyncHandler(async (req, res, next) => {
     // get EmployeeInfo
     const { titleName, firstName, lastName, email, peaCode } = resultIdm.user;
 
-    // ยังไม่มี USER นี้ใน mongoDB
-    if (!user) {
-      user = await User.create({
-        username,
-        titleName,
-        firstName,
-        lastName,
-        password,
-        email,
-        peaCode,
-        role: 'user',
-        group: 'pea',
-        company: 'pea'
-      });
-    }
-
-    // กรณี admin จะดูได้ทุกพื้นที่
-    if (user.role !== 'admin') {
-      user.peaCode = peaCode;
-    }
+    user = await User.create({
+      username,
+      titleName,
+      firstName,
+      lastName,
+      password,
+      email,
+      peaCode,
+      role: 'user',
+      group: 'pea',
+      company: 'pea'
+    });
   }
 
   if (user['group'] === 'operator') {
@@ -82,11 +99,52 @@ exports.login = asyncHandler(async (req, res, next) => {
     if (!isMatch) {
       return next(new ErrorResponse('Password is not match', 401));
     }
+  } else if (user['group'] === 'pea') {
+    // check valid in idm
+    const isValid = await isValidUsernameAndPassword(username, password);
+
+    // username ถูก แต่ password ไม่ถูกต้อง
+    if (!isValid.result) {
+      return next(new ErrorResponse(`${isValid.message}`, 401));
+    }
+
+    // fetch employeeInfo
+    const resultIdm = await employeeInfo(username);
+
+    // กรณีไม่มีข้อมูลใน IDM
+    if (!resultIdm.result) {
+      return next(
+        new ErrorResponse(
+          `Username ${username} is not found in IDM Server `,
+          404
+        )
+      );
+    }
+
+    if (user['role'] !== 'admin') {
+      // for PEA user if info change update in db
+      const { titleName, firstName, lastName, email, peaCode } = resultIdm.user;
+
+      if (
+        user['titleName'] !== titleName ||
+        user['firstName'] !== firstName ||
+        user['lastName'] !== lastName ||
+        user['email'] !== email ||
+        user['peaCode'] !== peaCode
+      ) {
+        user = await User.findByIdAndUpdate(user._id, resultIdm.user, {
+          new: true,
+          runValidators: true
+        });
+      }
+    }
   }
+
+  const token = user.getSignJwtToken();
 
   res.status(200).json({
     success: true,
-    data: user
+    token
   });
 });
 
@@ -109,5 +167,3 @@ exports.login = asyncHandler(async (req, res, next) => {
 // @desc    Forgot password
 // @route   POST /api/v1/auth/forgotpassword
 // @access  Public
-
-// sign token

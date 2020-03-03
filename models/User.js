@@ -1,3 +1,4 @@
+const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 
@@ -48,7 +49,7 @@ const UserSchema = new mongoose.Schema({
   group: {
     type: String,
     enum: ['operator', 'pea'],
-    default: 'pea'
+    default: 'operator'
   },
   company: {
     type: String,
@@ -76,6 +77,19 @@ UserSchema.pre('save', async function(next) {
 UserSchema.methods.matchPassword = async function(enteredPassword) {
   // return true or false
   return await bcrypt.compare(enteredPassword, this.password);
+};
+
+// * SIGN JWT and Return
+UserSchema.methods.getSignJwtToken = function() {
+  return jwt.sign(
+    {
+      _id: this.id
+    },
+    process.env.JWT_SECRET,
+    {
+      expiresIn: process.env.JWT_EXPIRE
+    }
+  );
 };
 
 module.exports = mongoose.model('User', UserSchema);
