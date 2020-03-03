@@ -14,7 +14,7 @@ const errorHandler = (err, req, res, next) => {
   // *Setting ERROR case
   // SOAP IDM Service ERROR
   if (err.code === 'ECONNABORTED') {
-    const message = `Invalid Credential in IDM Server`;
+    const message = `Invalid Credential`;
     error = new ErrorResponse(message, 401);
   }
 
