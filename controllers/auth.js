@@ -1,5 +1,6 @@
 const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middlewares/async');
+const peaRelation = require('../middlewares/peaRelation');
 const isValidUsernameAndPassword = require('../utils/idmServices/isValidUsernameAndPassword');
 const employeeInfo = require('../utils/idmServices/employeeInfo');
 const User = require('../models/User');
@@ -148,6 +149,12 @@ exports.login = asyncHandler(async (req, res, next) => {
 // @access  Private
 exports.getMe = asyncHandler(async (req, res, next) => {
   const user = await User.findById(req.user.id);
+
+  const { peaCode } = user;
+
+  const office = await peaRelation(peaCode);
+
+  // console.log(office);
 
   res.status(200).json({
     success: true,

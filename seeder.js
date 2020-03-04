@@ -10,6 +10,7 @@ dotenv.config({ path: './config/config.env' });
 const Line = require('./models/organizationLine/Line');
 const Result = require('./models/organizationLine/Result');
 const User = require('./models/User');
+const PEARelation = require('./models/PEARelation');
 
 // ConnectDB
 mongoose.connect(process.env.MONGO_URI, {
@@ -29,6 +30,9 @@ const results = JSON.parse(
 const users = JSON.parse(
   fs.readFileSync(`${__dirname}/_data/users.json`, 'utf-8')
 );
+const peaRelation = JSON.parse(
+  fs.readFileSync(`${__dirname}/_data/peaName.json`, 'utf-8')
+);
 
 // Import into DB
 const importData = async () => {
@@ -36,6 +40,7 @@ const importData = async () => {
     await Line.create(lines);
     await Result.create(results);
     await User.create(users);
+    await PEARelation.create(peaRelation);
 
     console.log('Data Imported...'.green.inverse);
     process.exit();
@@ -50,6 +55,7 @@ const deleteData = async () => {
     await Line.deleteMany();
     await Result.deleteMany();
     await User.deleteMany();
+    await PEARelation.deleteMany();
 
     console.log('Data Destroyed...'.red.inverse);
     process.exit();

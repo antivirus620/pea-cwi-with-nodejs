@@ -1,14 +1,26 @@
 [
   {
     "company": "pea",
-    "username": "admin",
+    "username": "admin1",
     "email": "admin@gmail.com",
     "titleName": "Mr",
     "firstName": "Admin",
     "lastName": "Account",
     "group": "pea",
     "role": "pea",
-    "password": 123456
+    "password": "123456"
+  },
+  {
+    "_id": "5e5e558a0d51c247ac6408ce",
+    "company": "pea",
+    "username": "503015",
+    "email": "503015@gmail.com",
+    "titleName": "Mr",
+    "firstName": "Admin",
+    "lastName": "Account",
+    "group": "pea",
+    "role": "pea",
+    "password": "b@s0012043500"
   },
   {
     "company": "tuc",
@@ -19,7 +31,7 @@
     "lastName": "Doe",
     "group": "operator",
     "role": "operator",
-    "password": 123456
+    "password": "123456"
   },
   {
     "company": "awn",
@@ -30,7 +42,7 @@
     "lastName": "Smith",
     "group": "operator",
     "role": "operator",
-    "password": 123456
+    "password": "123456"
   },
   {
     "company": "tot",
@@ -41,7 +53,7 @@
     "lastName": "Williams",
     "group": "operator",
     "role": "operator",
-    "password": 123456
+    "password": "123456"
   },
   {
     "company": "ais",
@@ -52,6 +64,6 @@
     "lastName": "Ryan",
     "group": "operator",
     "role": "operator",
-    "password": 123456
+    "password": "123456"
   }
 ]

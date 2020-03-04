@@ -42,7 +42,21 @@ const LineSchema = new mongoose.Schema(
     },
     createAt: {
       type: Date,
+      default: Date,
+      immutable: true
+    },
+    lastUpdateAt: {
+      type: Date,
       default: Date.now
+    },
+    createByUser: {
+      type: mongoose.Schema.ObjectId,
+      ref: 'User',
+      required: true
+    },
+    lastUpdateByUser: {
+      type: mongoose.Schema.ObjectId,
+      ref: 'User'
     }
   },
   {

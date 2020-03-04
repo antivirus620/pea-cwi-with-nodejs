@@ -34,6 +34,9 @@ exports.getLine = asyncHandler(async (req, res, next) => {
 // @route   POST /api/v1/lines/
 // @access  Private
 exports.createLine = asyncHandler(async (req, res, next) => {
+  // Add user to req.body
+  req.body.createByUser = req.user.id;
+
   const line = await Line.create(req.body);
 
   res.status(201).json({ success: true, data: line });
@@ -43,11 +46,9 @@ exports.createLine = asyncHandler(async (req, res, next) => {
 // @route   PUT /api/v1/lines/:id
 // @access  Private
 exports.updateLine = asyncHandler(async (req, res, next) => {
-  const line = await Line.findByIdAndUpdate(req.params.id, req.body, {
-    // * อย่าลืมเอาข้อมูลใหม่ ใส่ไปใน arg1
-    new: true,
-    runValidators: true
-  });
+  req.body.lastUpdateByUser = req.user.id;
+
+  const line = await Line.findById(req.params.id);
 
   if (!line) {
     return next(
@@ -57,6 +58,11 @@ exports.updateLine = asyncHandler(async (req, res, next) => {
       )
     );
   }
+
+  await Line.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true
+  });
 
   res.status(200).json({
     success: true,
