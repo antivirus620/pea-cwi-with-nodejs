@@ -1,48 +1,31 @@
-const mongoose = require('mongoose');
+// เอาไว้ทำ array ความสัมพันธ์ของ AOJ ไฟฟ้า
+const PEAOffice = require('../models/PEARelation');
 
-const PEARelationSchema = new mongoose.Schema({
-  peaCode: {
-    type: String,
-    required: [true, 'Please add PEA code'],
-    unique: true,
-    maxlength: 6
-  },
-  peaNameBySAP: {
-    type: String
-  },
-  peaOffice: {
-    type: String,
-    required: [true, 'Please add PEA office'],
-    unique: true,
-    maxlength: 4
-  },
-  officeLevel: {
-    type: Number,
-    required: [true, 'Please add PEA office level']
-  },
+const peaRelation = async peaCode => {
+  let query;
 
-  reportTo: String,
-  rawPEAFullname: {
-    type: String,
-    required: [true, 'Please add PEA full name']
-  },
-  rawCodeByGIS: {
-    type: Number,
-    required: [true, 'Please add PEA GIS code number'],
-    maxlength: 6
-  },
-  province: {
-    type: String,
-    required: [true, 'Please add province']
-  },
-  region: {
-    type: Number,
-    required: [true, 'Please add PEA region']
-  },
-  area: {
-    type: Number,
-    required: [true, 'Please add PEA area']
+  const office = await PEAOffice.find({ peaCode });
+  // รับ peaCode มา
+  if (office[0].peaCode.slice(0, 1) === 'Z') {
+    query = '';
+  } else if (
+    office[0].officeLevel === 0 &&
+    office[0].peaCode.slice(0, 1) !== 'Z'
+  ) {
+    query = peaCode.slice(0, 1);
+  } else if (office[0].officeLevel === (1 || 2)) {
+    query = peaCode.slice(0, 3);
+  } else if (office[0].officeLevel === (3 || 4)) {
+    query = peaCode.slice(0, 4);
   }
-});
 
-module.exports = mongoose.model('PEARelation', PEARelationSchema);
+  let pea = await PEAOffice.find({ peaCode: { $regex: `${query}.*` } });
+
+  let aoj = pea.map(eachOffice => {
+    return eachOffice['peaCode'];
+  });
+
+  return aoj;
+};
+
+module.exports = peaRelation;

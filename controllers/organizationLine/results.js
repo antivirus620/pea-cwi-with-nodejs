@@ -57,6 +57,16 @@ exports.addResult = asyncHandler(async (req, res, next) => {
     );
   }
 
+  // เช็คว่า user นี้อยู่ในพื้นที่ AOJ นี้หรือไม่
+  if (!req.user.aoj.includes(line.peaCode)) {
+    return next(
+      new ErrorResponse(
+        `You can not authorize in PEA Code ${line.peaCode}`,
+        401
+      )
+    );
+  }
+
   const result = await Result.create(req.body);
 
   // ! อย่าลืมไป add to routes ใช้อันที่มาจาก lines route
@@ -69,10 +79,7 @@ exports.addResult = asyncHandler(async (req, res, next) => {
 // @access  Private
 exports.updateResult = asyncHandler(async (req, res, next) => {
   // ค้นหาเส้นทางก่อนว่ามีใน database มั้ย
-  const result = await Result.findByIdAndUpdate(req.params.id, req.body, {
-    new: true,
-    runValidators: true
-  });
+  let result = await Result.findById(req.params.id);
 
   if (!result) {
     return next(
@@ -80,6 +87,23 @@ exports.updateResult = asyncHandler(async (req, res, next) => {
       404
     );
   }
+
+  const line = await Line.findById(result.line);
+
+  // เช็คว่า user นี้อยู่ในพื้นที่ AOJ นี้หรือไม่
+  if (!req.user.aoj.includes(line.peaCode)) {
+    return next(
+      new ErrorResponse(
+        `You can not authorize in PEA Code ${line.peaCode}`,
+        401
+      )
+    );
+  }
+
+  result = await Result.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true
+  });
 
   res.status(200).json({ success: true, data: result });
 });
@@ -95,6 +119,18 @@ exports.deleteResult = asyncHandler(async (req, res, next) => {
     return next(
       new ErrorResponse(`No result with the id of ${req.params.id}`),
       404
+    );
+  }
+
+  const line = await Line.findById(result.line);
+
+  // เช็คว่า user นี้อยู่ในพื้นที่ AOJ นี้หรือไม่
+  if (!req.user.aoj.includes(line.peaCode)) {
+    return next(
+      new ErrorResponse(
+        `You can not authorize in PEA Code ${line.peaCode}`,
+        401
+      )
     );
   }
 

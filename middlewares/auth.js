@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const ErrorResponse = require('../utils/errorResponse');
+const peaRealtion = require('../utils/peaRelation');
 const asyncHandler = require('./async');
 const User = require('../models/User');
 
@@ -31,6 +32,7 @@ exports.protect = asyncHandler(async (req, res, next) => {
 
     // เอา user ไปใช้งานต่อที่ route ผ่าน req.user
     req.user = await User.findById(decoded.id);
+    req.user.aoj = await peaRealtion(req.user.peaCode);
 
     next();
   } catch (err) {

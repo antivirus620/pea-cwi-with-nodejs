@@ -2,6 +2,7 @@
 const Line = require('../../models/organizationLine/Line');
 const ErrorResponse = require('../../utils/errorResponse');
 const asyncHandler = require('../../middlewares/async');
+const peaRealtion = require('../../utils/peaRelation');
 
 // @desc    Get all organization line
 // @route   GET /api/v1/lines
@@ -37,6 +38,9 @@ exports.createLine = asyncHandler(async (req, res, next) => {
   // Add user to req.body
   req.body.createByUser = req.user.id;
 
+  // Add PEA owner
+  req.body.peaCode = req.user.peaCode;
+
   const line = await Line.create(req.body);
 
   res.status(201).json({ success: true, data: line });
@@ -48,7 +52,7 @@ exports.createLine = asyncHandler(async (req, res, next) => {
 exports.updateLine = asyncHandler(async (req, res, next) => {
   req.body.lastUpdateByUser = req.user.id;
 
-  const line = await Line.findById(req.params.id);
+  let line = await Line.findById(req.params.id);
 
   if (!line) {
     return next(
@@ -59,7 +63,17 @@ exports.updateLine = asyncHandler(async (req, res, next) => {
     );
   }
 
-  await Line.findByIdAndUpdate(req.params.id, req.body, {
+  // เช็คว่า user นี้อยู่ในพื้นที่ AOJ นี้หรือไม่
+  if (!req.user.aoj.includes(line.peaCode)) {
+    return next(
+      new ErrorResponse(
+        `You can not update data in PEA Code ${line.peaCode}`,
+        401
+      )
+    );
+  }
+
+  line = await Line.findByIdAndUpdate(req.params.id, req.body, {
     new: true,
     runValidators: true
   });
@@ -81,6 +95,16 @@ exports.deleteLine = asyncHandler(async (req, res, next) => {
       new ErrorResponse(
         `Organization line not found with id ${req.params.id}`,
         404
+      )
+    );
+  }
+
+  // เช็คว่า user นี้อยู่ในพื้นที่ AOJ นี้หรือไม่
+  if (!req.user.aoj.includes(line.peaCode)) {
+    return next(
+      new ErrorResponse(
+        `You can not delete line in PEA Code ${line.peaCode}`,
+        401
       )
     );
   }
