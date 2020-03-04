@@ -4,7 +4,7 @@
     "peaNameBySAP": "สนญ.",
     "peaOffice": "Z000",
     "officeLevel": 0,
-    "reportTo": null,
+    "reportTo": "Z00000",
     "rawPEAFullname": "การไฟฟ้าส่วนภูมิภาค สำนักงานใหญ่",
     "rawCodeByGIS": 100000,
     "province": "กรุงเทพมหานคร",
